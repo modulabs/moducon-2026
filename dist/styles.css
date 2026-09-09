@@ -13,10 +13,13 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .menu-open [data-framer-name="Navmenu"] { opacity: 1 !important; background: #101112 !important; }
 .menu-open [data-framer-name="Navmenu"] p { --framer-text-color: #fff !important; color: #fff !important; }
 .menu-open [data-framer-name="Menu Button"] { transform: rotate(90deg); }
+.menu-open[data-nav-theme="light"] [data-framer-name="Navmenu"] { background: #fff !important; }
+.menu-open[data-nav-theme="light"] [data-framer-name="Navmenu"] p { --framer-text-color: #1f1f1f !important; color: #1f1f1f !important; }
+.menu-open[data-nav-theme="light"] [data-framer-name="Navmenu"] [data-framer-name="Primary"] p { --framer-text-color: #fff !important; color: #fff !important; }
 .framer--carousel { overscroll-behavior-x: contain; }
 .framer--carousel > li > a { transition: background-color .2s ease; }
 .framer--carousel > li > a:hover { background-color: #e3e3e3 !important; }
-.hero-ticker { animation: ticker-scroll var(--ticker-duration, 30s) linear infinite; }
+.hero-ticker, .logo-ticker { animation: ticker-scroll var(--ticker-duration, 30s) linear infinite; }
 .hero-ticker:hover, .hero-ticker:focus-within { animation-play-state: paused; }
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(var(--ticker-distance, 0px)); } }
 span.framer-sgaXk { cursor: default; }
@@ -27,4 +30,4 @@ span.framer-sgaXk { cursor: default; }
   .framer-vpLOs .framer-rtjk5q { padding-left: 30px; }
   .faq-answer { padding-left: 30px; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } .hero-ticker { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } .hero-ticker, .logo-ticker { animation: none !important; } }

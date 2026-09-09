@@ -9,12 +9,22 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const scrollBehavior = () => reducedMotion.matches ? "instant" : "smooth";
 
-  // The reference has two track links nested inside other linked artwork.
+  // Clean web URLs, with relative index.html links retained for offline use.
+  if (window.location.protocol !== "file:") {
+    all("[data-local-route][href]").forEach((link) => {
+      const target = new URL(link.getAttribute("href"), window.location.href);
+      const route = link.dataset.localRoute;
+      const path = route === "/" ? "/" : `${route}/`;
+      link.setAttribute("href", `${path}${target.search}${target.hash}`);
+    });
+  }
+
+  // Preserve nested links in the reference artwork without nested <a> tags.
   all('span[data-nested-link="true"][href]').forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
-      window.location.hash = link.getAttribute("href");
+      window.location.assign(link.getAttribute("href"));
     });
     link.addEventListener("keydown", (event) => {
       if (event.key === "Enter") { event.preventDefault(); link.click(); }
@@ -84,10 +94,14 @@
   });
 
   // Mobile navigation: hidden links leave the keyboard focus order.
-  all("nav.framer-v-1ioopn8").forEach((nav, index) => {
+  all("nav.framer-v-1ioopn8, nav.framer-v-1fe4gkm").forEach((nav, index) => {
     const toggle = nav.querySelector('[data-framer-name="Menu Button"]');
     const menu = nav.querySelector('[data-framer-name="Navmenu"]');
     if (!toggle || !menu) return;
+    const light = nav.classList.contains("framer-v-1fe4gkm");
+    const closedVariant = light ? "framer-v-1fe4gkm" : "framer-v-1ioopn8";
+    const openVariant = light ? "framer-v-zo5h3m" : "framer-v-zfrn6f";
+    nav.dataset.navTheme = light ? "light" : "dark";
     let isOpen = false;
     menu.id = `mobile-navigation-${index}`;
     toggle.setAttribute("aria-controls", menu.id);
@@ -95,8 +109,8 @@
     const setOpen = (value, restoreFocus = false) => {
       isOpen = value;
       nav.classList.toggle("menu-open", value);
-      nav.classList.toggle("framer-v-1ioopn8", !value);
-      nav.classList.toggle("framer-v-zfrn6f", value);
+      nav.classList.toggle(closedVariant, !value);
+      nav.classList.toggle(openVariant, value);
       toggle.setAttribute("aria-expanded", String(value));
       toggle.setAttribute("aria-label", value ? "메뉴 닫기" : "메뉴 열기");
       menu.inert = !value;
@@ -150,6 +164,57 @@
     if ("ResizeObserver" in window) new ResizeObserver(updateTicker).observe(track);
     document.fonts?.ready.then(updateTicker);
     updateTicker();
+  });
+
+  // Archive background videos only play while visible; posters remain usable
+  // when motion is reduced or the browser blocks automatic playback.
+  const videos = all("video[muted][loop]");
+  const visibleVideos = new Set();
+  const updateVideo = (video) => {
+    if (visibleVideos.has(video) && !reducedMotion.matches && !document.hidden) {
+      video.muted = true;
+      video.play().catch(() => {});
+    } else {
+      video.pause();
+    }
+  };
+  if (videos.length && "IntersectionObserver" in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (isIntersecting) visibleVideos.add(target);
+        else visibleVideos.delete(target);
+        updateVideo(target);
+      });
+    });
+    videos.forEach((video) => videoObserver.observe(video));
+    document.addEventListener("visibilitychange", () => videos.forEach(updateVideo));
+    reducedMotion.addEventListener("change", () => videos.forEach(updateVideo));
+  }
+
+  // The archive cycles one complete sequence of six partner logos.
+  all(".framer-147vj86-container section > ul, .framer-619hio-container section > ul").forEach((track) => {
+    const originals = [...track.children];
+    originals.forEach((item) => {
+      const duplicate = item.cloneNode(true);
+      duplicate.setAttribute("aria-hidden", "true");
+      duplicate.inert = true;
+      track.append(duplicate);
+    });
+    track.classList.add("logo-ticker");
+    const measure = () => {
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      const distance = originals.reduce((sum, item) => sum + item.getBoundingClientRect().width + gap, 0);
+      track.style.setProperty("--ticker-distance", `${-distance}px`);
+      track.style.setProperty("--ticker-duration", `${Math.max(1, distance / 100)}s`);
+    };
+    if ("ResizeObserver" in window) new ResizeObserver(measure).observe(track);
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(([entry]) => {
+        track.style.animationPlayState = entry.isIntersecting ? "running" : "paused";
+      }).observe(track);
+    }
+    window.addEventListener("load", measure, { once: true });
+    measure();
   });
 
   const status = document.createElement("div");

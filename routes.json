@@ -1,0 +1,308 @@
+[
+  {
+    "path": "/",
+    "file": "index.html",
+    "title": "MODUCON 2025 | 모두콘 2025",
+    "source": "https://moducon.modulabs.co.kr/"
+  },
+  {
+    "path": "/archive_241114",
+    "file": "archive_241114/index.html",
+    "title": "MODUCON 아카이브",
+    "source": "https://moducon.modulabs.co.kr/archive_241114"
+  },
+  {
+    "path": "/faq",
+    "file": "faq/index.html",
+    "title": "MODUCON2025 | faq",
+    "source": "https://moducon.modulabs.co.kr/faq"
+  },
+  {
+    "path": "/page",
+    "file": "page/index.html",
+    "title": "MODUCON · AI for Next Impact",
+    "source": "https://moducon.modulabs.co.kr/page"
+  },
+  {
+    "path": "/session",
+    "file": "session/index.html",
+    "title": "MODUCON 2025 | Sessions",
+    "source": "https://moducon.modulabs.co.kr/session"
+  },
+  {
+    "path": "/session/00-00",
+    "file": "session/00-00/index.html",
+    "title": "기술창업 6번을 통해서 배운 AI 시대의 기회 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-00"
+  },
+  {
+    "path": "/session/00-01",
+    "file": "session/00-01/index.html",
+    "title": "결핍이 만든 OpenAI 첫 한국인 엔지니어 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-01"
+  },
+  {
+    "path": "/session/00-02",
+    "file": "session/00-02/index.html",
+    "title": "AI 다음은 양자! 미래 컴퓨팅의 설계도, 퀀텀 인사이트 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-02"
+  },
+  {
+    "path": "/session/00-03",
+    "file": "session/00-03/index.html",
+    "title": "From Basic, To Specific : 그래프에서 멀티턴으로, 유연함을 디자인하다 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-03"
+  },
+  {
+    "path": "/session/00-04",
+    "file": "session/00-04/index.html",
+    "title": "Tenstorrent - 짐 켈러의 오픈소스 CPU와 AI 가속기 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-04"
+  },
+  {
+    "path": "/session/00-05",
+    "file": "session/00-05/index.html",
+    "title": "AI for the Next Era of Visual Media | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-05"
+  },
+  {
+    "path": "/session/00-06",
+    "file": "session/00-06/index.html",
+    "title": "바이브코딩: 프롬프팅을 넘어 파이프라인으로 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/00-06"
+  },
+  {
+    "path": "/session/01-01",
+    "file": "session/01-01/index.html",
+    "title": "AI 혁신을 위한 핵심 학습기술 : AI 탑티어논문 시리즈 I - NeurIPS, CVPR | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/01-01"
+  },
+  {
+    "path": "/session/01-02",
+    "file": "session/01-02/index.html",
+    "title": "AI 혁신을 위한 핵심 학습기술 : AI 탑티어논문 시리즈 II - IISWC, MICCAI | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/01-02"
+  },
+  {
+    "path": "/session/01-03",
+    "file": "session/01-03/index.html",
+    "title": "AI, 아이디어를 무대로 이끌다 : 바이브코딩으로 새로운 가능성 만들기 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/01-03"
+  },
+  {
+    "path": "/session/01-04",
+    "file": "session/01-04/index.html",
+    "title": "다윗이 골리앗을 이긴 방법: 작지만 강한 AI팀의 여정 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/01-04"
+  },
+  {
+    "path": "/session/01-05",
+    "file": "session/01-05/index.html",
+    "title": "당신의 5년을 아껴드리겠습니다: 세 번의 창업으로 배운 진짜 성장 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/01-05"
+  },
+  {
+    "path": "/session/01-06",
+    "file": "session/01-06/index.html",
+    "title": "AI 로봇으로 창업까지: 우리의 미래, 로봇의 손으로 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/01-06"
+  },
+  {
+    "path": "/session/10-01",
+    "file": "session/10-01/index.html",
+    "title": "당신의 일과 조직은 안녕하십니까? | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-01"
+  },
+  {
+    "path": "/session/10-02",
+    "file": "session/10-02/index.html",
+    "title": "AI Network: Agent-to-Agent Ontology, AP2, x402 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-02"
+  },
+  {
+    "path": "/session/10-03",
+    "file": "session/10-03/index.html",
+    "title": "없는데 어떻게 해요? 합성 데이터로 만드는 (도메인 특화) 언어모델 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-03"
+  },
+  {
+    "path": "/session/10-04",
+    "file": "session/10-04/index.html",
+    "title": "연구실을 떠난 AI, AI for Impact | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-04"
+  },
+  {
+    "path": "/session/10-05",
+    "file": "session/10-05/index.html",
+    "title": "2025년, 양자컴퓨팅의 현주소와 미래: 원리, 트렌드, 산업적 응용 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-05"
+  },
+  {
+    "path": "/session/10-06",
+    "file": "session/10-06/index.html",
+    "title": "UOT-RFM for Long-Tailed Data Generation | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-06"
+  },
+  {
+    "path": "/session/10-07",
+    "file": "session/10-07/index.html",
+    "title": "from Data import Taste: 쩝쩝LAB의 실용 AI 여정 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-07"
+  },
+  {
+    "path": "/session/10-08",
+    "file": "session/10-08/index.html",
+    "title": "Biosignal Markers for Human-Centered Clinical AI | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-08"
+  },
+  {
+    "path": "/session/10-09",
+    "file": "session/10-09/index.html",
+    "title": "AI 에이전트, 현실과 만나다: 홈 로보틱스 (AI Agents Meet the Real World: Home Robotics) | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/10-09"
+  },
+  {
+    "path": "/session/101-1",
+    "file": "session/101-1/index.html",
+    "title": "6개월 후, 우리는 리서처가 되었다 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/101-1"
+  },
+  {
+    "path": "/session/101-2",
+    "file": "session/101-2/index.html",
+    "title": "Google Antigravity로 만드는 인공지능 어플리케이션 구축하기 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/101-2"
+  },
+  {
+    "path": "/session/101-3",
+    "file": "session/101-3/index.html",
+    "title": "AI 코딩 도구 Cursor로 만드는 나만의 서비스 – Vibe Coding 핸즈온 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/101-3"
+  },
+  {
+    "path": "/session/101-4",
+    "file": "session/101-4/index.html",
+    "title": "지금, 발빠른 기업은 어떻게 AI 인재를 키우고 있을까? | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/101-4"
+  },
+  {
+    "path": "/session/a1",
+    "file": "session/a1/index.html",
+    "title": "AI 테크트렌드: 산업적 관점에서 봐야할 관점은? | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/a1"
+  },
+  {
+    "path": "/session/a2",
+    "file": "session/a2/index.html",
+    "title": "성공하는 AI 프로젝트의 A to Z 전략과 성장 마인드셋 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/a2"
+  },
+  {
+    "path": "/session/a3",
+    "file": "session/a3/index.html",
+    "title": "국방 AI 트렌드 전망 2025 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/a3"
+  },
+  {
+    "path": "/session/a4",
+    "file": "session/a4/index.html",
+    "title": "AI 트렌드 2025: AI와 함께하는 사회적 변화 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/a4"
+  },
+  {
+    "path": "/session/a5",
+    "file": "session/a5/index.html",
+    "title": "리벨리온의 오픈소스 전략 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/a5"
+  },
+  {
+    "path": "/session/a6",
+    "file": "session/a6/index.html",
+    "title": "AI 시대의 생존 전략: 도구로서의 AI, 대체되지 않는 인재로 성장하기 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/a6"
+  },
+  {
+    "path": "/session/b1",
+    "file": "session/b1/index.html",
+    "title": "사람과 세상을 이해하는 AI와 SW | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/b1"
+  },
+  {
+    "path": "/session/b2",
+    "file": "session/b2/index.html",
+    "title": "돕는 기술로 더 나은 세상을 더 가깝게, 테크포임팩트 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/b2"
+  },
+  {
+    "path": "/session/b3",
+    "file": "session/b3/index.html",
+    "title": "혼자 인공지능 공부하니? 난 함께 배워! | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/b3"
+  },
+  {
+    "path": "/session/b4",
+    "file": "session/b4/index.html",
+    "title": "함께 있다, 마음을 잇다 - 연결과 대화를 통한 기술과 사람의 따뜻한 동행 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/b4"
+  },
+  {
+    "path": "/session/b5",
+    "file": "session/b5/index.html",
+    "title": "안전을 위한 기술, 사람을 위한 여정 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/b5"
+  },
+  {
+    "path": "/session/b6",
+    "file": "session/b6/index.html",
+    "title": "기후 위기로 인해 빼앗긴 들에도 봄은 오는가? | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/b6"
+  },
+  {
+    "path": "/session/c1",
+    "file": "session/c1/index.html",
+    "title": "신뢰할 수 있는 AI 검색 엔진을 만들기 위한 Liner의 여정 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/c1"
+  },
+  {
+    "path": "/session/d1",
+    "file": "session/d1/index.html",
+    "title": "다오랩, 미래 조직을 실험하다 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/d1"
+  },
+  {
+    "path": "/session/i-01",
+    "file": "session/i-01/index.html",
+    "title": "AI_TOP_100: AI와 성장하는 사람들 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/i-01"
+  },
+  {
+    "path": "/session/i-02",
+    "file": "session/i-02/index.html",
+    "title": "AI로 열어가는 비영리 활동가의 미래 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/i-02"
+  },
+  {
+    "path": "/session/i-03",
+    "file": "session/i-03/index.html",
+    "title": "[테크포임팩트LAB] 일상의 장벽을 허무는 돕는 기술 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/i-03"
+  },
+  {
+    "path": "/session/i-04",
+    "file": "session/i-04/index.html",
+    "title": "[테크포임팩트LAB] 사람을 잇는 돕는 기술 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/i-04"
+  },
+  {
+    "path": "/session/i-05",
+    "file": "session/i-05/index.html",
+    "title": "[테크포임팩트LAB] 퇴근 후 만드는 돕는 기술 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/i-05"
+  },
+  {
+    "path": "/session/k1",
+    "file": "session/k1/index.html",
+    "title": "뇌과학자가 바라보는 AI 시대의 미래 | MODUCON",
+    "source": "https://moducon.modulabs.co.kr/session/k1"
+  }
+]
