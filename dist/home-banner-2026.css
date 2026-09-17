@@ -1,0 +1,28 @@
+/* Keep the homepage layout and copy over the supplied navy/cyan artwork. */
+body[data-route="/"] .home-hero-2026 {
+  background-color: #102136;
+}
+
+body[data-route="/"] .home-hero-2026 .framer-yjf9c .framer-text,
+body[data-route="/"] .home-hero-2026 .framer-vyd9lw .framer-text {
+  --framer-text-color: #fff !important;
+  color: #fff;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 24%);
+}
+
+body[data-route="/"] .home-hero-2026 .framer-1hapq07 {
+  background-color: #fff;
+}
+
+body[data-route="/"] .home-hero-2026 .framer-1hapq07 .framer-text {
+  --framer-text-color: #102136 !important;
+  color: #102136;
+}
+
+body[data-route="/"] .home-hero-2026 .framer-1hapq07:hover {
+  background-color: #e7faff;
+}
+
+body[data-route="/"] .home-hero-2026 [data-text-fill] {
+  background-image: linear-gradient(0deg, #76e9fa, #fff) !important;
+}
