@@ -1,0 +1,17 @@
+/* Homepage brand assets supplied for MODUCON 2026. */
+.moducon-logo-2026 {
+  display: block;
+  object-fit: contain;
+}
+
+.moducon-logo-2026--nav {
+  flex-shrink: 0;
+  width: 132px;
+  height: auto;
+  aspect-ratio: 1330 / 436;
+}
+
+body[data-route="/"] .framer-rclk7 .framer-crv3l9 {
+  aspect-ratio: 1330 / 436;
+  height: auto;
+}
