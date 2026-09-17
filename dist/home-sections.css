@@ -1,0 +1,5 @@
+/* To restore the homepage sessions, set data-session-visibility="visible"
+   on the homepage body. Session pages and their content remain available. */
+body[data-route="/"][data-session-visibility="hidden"] [data-home-sessions] {
+  display: none !important;
+}
