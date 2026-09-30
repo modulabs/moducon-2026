@@ -1,0 +1,266 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "title": "MODUCON 2026 | 모두콘 2026",
+    "staleText": [],
+    "dates": [
+      {
+        "text": "2026년 12월 12일(토) · 이화여대 ECC",
+        "x": 579.5,
+        "right": 860.5
+      }
+    ],
+    "currentIntroduction": true,
+    "locationDate": [
+      "2026년 12월 12일(토) 10시~17시",
+      "2026년 12월 12일(토) 10시~17시"
+    ],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기",
+      "지난 모두콘 다시보기\n\nBook Now"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/faq/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "title": "MODUCON 2026 | FAQ",
+    "staleText": [],
+    "dates": [],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "title": "MODUCON 2026 | 모두콘 2026",
+    "staleText": [],
+    "dates": [
+      {
+        "text": "2026년 12월 12일(토) · 이화여대 ECC",
+        "x": 371.5,
+        "right": 652.5
+      }
+    ],
+    "currentIntroduction": true,
+    "locationDate": [
+      "2026년 12월 12일(토) 10시~17시",
+      "2026년 12월 12일(토) 10시~17시"
+    ],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기",
+      "지난 모두콘 다시보기\n\nBook Now"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/faq/",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "title": "MODUCON 2026 | FAQ",
+    "staleText": [],
+    "dates": [],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "scrollWidth": 390,
+    "title": "MODUCON 2026 | 모두콘 2026",
+    "staleText": [],
+    "dates": [
+      {
+        "text": "2026년 12월 12일(토) · 이화여대 ECC",
+        "x": 54.5,
+        "right": 335.5
+      }
+    ],
+    "currentIntroduction": true,
+    "locationDate": [
+      "2026년 12월 12일(토) 10시~17시",
+      "2026년 12월 12일(토) 10시~17시"
+    ],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기",
+      "지난 모두콘 다시보기\n\nBook Now"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/faq/",
+    "width": 390,
+    "scrollWidth": 390,
+    "title": "MODUCON 2026 | FAQ",
+    "staleText": [],
+    "dates": [],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": "MODUCON 2026 | 모두콘 2026",
+    "staleText": [],
+    "dates": [
+      {
+        "text": "2026년 12월 12일(토) · 이화여대 ECC",
+        "x": 19.5,
+        "right": 300.5
+      }
+    ],
+    "currentIntroduction": true,
+    "locationDate": [
+      "2026년 12월 12일(토) 10시~17시",
+      "2026년 12월 12일(토) 10시~17시"
+    ],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기",
+      "지난 모두콘 다시보기\n\nBook Now"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  },
+  {
+    "route": "/faq/",
+    "width": 320,
+    "scrollWidth": 320,
+    "title": "MODUCON 2026 | FAQ",
+    "staleText": [],
+    "dates": [],
+    "hiddenSessions": true,
+    "visibleLogos": [
+      {
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "width": 132
+      }
+    ],
+    "replayLabels": [
+      "지난 모두콘 다시보기\n\n지난 모두콘 다시보기"
+    ],
+    "share": {
+      "title": "MODUCON 2026 — Deeper in AI",
+      "text": "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다.",
+      "url": "https://moducon.modulabs.co.kr/"
+    }
+  }
+]

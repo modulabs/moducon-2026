@@ -1,0 +1,46 @@
+{
+  "fonts": [
+    {
+      "family": "Motif",
+      "status": "loaded",
+      "weight": "500 700"
+    }
+  ],
+  "chars": [
+    {
+      "text": "모",
+      "variation": "\"wght\" 500",
+      "font": "Motif",
+      "box": {
+        "x": 0,
+        "y": -200,
+        "width": 164.640625,
+        "height": 528
+      }
+    },
+    {
+      "text": "두",
+      "variation": "\"wght\" 530",
+      "font": "Motif",
+      "box": {
+        "x": 164.640625,
+        "y": -200,
+        "width": 172.8125,
+        "height": 528
+      }
+    },
+    {
+      "text": "콘",
+      "variation": "\"wght\" 620",
+      "font": "Motif",
+      "box": {
+        "x": 337.453125,
+        "y": -200,
+        "width": 197.046875,
+        "height": 528
+      }
+    }
+  ],
+  "scrollWidth": 1600,
+  "width": 1600
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "background": {
+      "src": "./assets/moducon26-hero-background.png",
+      "natural": [
+        1672,
+        941
+      ]
+    },
+    "heroCopy": [
+      {
+        "text": "모두콘 2025 From AI to Infinity",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "12/13 이화여대 ECC",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "button": {
+      "text": "모두콘 2025 다시보기",
+      "color": "rgb(16, 33, 54)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "logos": [
+      {
+        "src": "./assets/moducon26_logo_white.png",
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "rect": {
+          "x": 144,
+          "y": 21.3125,
+          "width": 132,
+          "height": 43.265625
+        },
+        "objectFit": "contain",
+        "header": null
+      },
+      {
+        "src": "./assets/moducon26_logo_white.png",
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "rect": {
+          "x": 480.5,
+          "y": 211.90625,
+          "width": 479,
+          "height": 157.015625
+        },
+        "objectFit": "contain",
+        "header": "rgb(16, 33, 54)"
+      }
+    ],
+    "oldHero": 0,
+    "oldHeader": 0,
+    "homeLinks": [
+      "/"
+    ]
+  },
+  {
+    "background": {
+      "src": "./assets/moducon26-hero-background.png",
+      "natural": [
+        1672,
+        941
+      ]
+    },
+    "heroCopy": [
+      {
+        "text": "모두콘 2025 From AI to Infinity",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "12/13 이화여대 ECC",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "button": {
+      "text": "모두콘 2025 다시보기",
+      "color": "rgb(16, 33, 54)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "width": 1024,
+    "scrollWidth": 1024,
+    "logos": [
+      {
+        "src": "./assets/moducon26_logo_white.png",
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "rect": {
+          "x": 24,
+          "y": 21.3125,
+          "width": 132,
+          "height": 43.265625
+        },
+        "objectFit": "contain",
+        "header": null
+      },
+      {
+        "src": "./assets/moducon26_logo_white.png",
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "rect": {
+          "x": 256,
+          "y": 219.90625,
+          "width": 512,
+          "height": 167.828125
+        },
+        "objectFit": "contain",
+        "header": "rgb(16, 33, 54)"
+      }
+    ],
+    "oldHero": 0,
+    "oldHeader": 0,
+    "homeLinks": [
+      "/"
+    ]
+  },
+  {
+    "background": {
+      "src": "./assets/moducon26-hero-background.png",
+      "natural": [
+        1672,
+        941
+      ]
+    },
+    "heroCopy": [
+      {
+        "text": "모두콘 2025 From AI to Infinity",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "12/13 이화여대 ECC",
+        "color": "rgb(255, 255, 255)"
+      }
+    ],
+    "button": {
+      "text": "모두콘 2025 다시보기",
+      "color": "rgb(16, 33, 54)",
+      "background": "rgb(255, 255, 255)"
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "logos": [
+      {
+        "src": "./assets/moducon26_logo_white.png",
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "rect": {
+          "x": 18,
+          "y": 12.375,
+          "width": 132,
+          "height": 43.265625
+        },
+        "objectFit": "contain",
+        "header": null
+      },
+      {
+        "src": "./assets/moducon26_logo_white.png",
+        "alt": "MODUCON 2026",
+        "natural": [
+          1330,
+          436
+        ],
+        "rect": {
+          "x": 39,
+          "y": 233,
+          "width": 312,
+          "height": 102.265625
+        },
+        "objectFit": "contain",
+        "header": "rgb(16, 33, 54)"
+      }
+    ],
+    "oldHero": 0,
+    "oldHeader": 0,
+    "homeLinks": [
+      "/",
+      "/"
+    ]
+  }
+]

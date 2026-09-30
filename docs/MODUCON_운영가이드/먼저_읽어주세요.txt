@@ -1,0 +1,9 @@
+MODUCON 운영 가이드
+
+1. PDF: 순서대로 읽는 안내서. 쪽수는 이 파일 기준입니다.
+2. Word: 내용을 고쳐 쓰거나 담당자에게 전달할 편집용 파일.
+3. Markdown: 텍스트와 링크를 복사하기 위한 파일.
+
+현재 사이트나 도메인 설정은 이 안내서 제작으로 바뀌지 않았습니다.
+프로젝트 위치: C:\Users\Admin\Documents\업무\moducon-js
+현재 배포본: https://moducon-js-recreation.community167167.chatgpt.site
