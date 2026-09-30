@@ -2,7 +2,7 @@
 
 ## 요청
 
-사용자는 이 대화에서 만든 작업을 개인 GitHub 계정과 Codex Cloud로 옮겨 별도의 새 사이트로 게시하기를 요청했습니다. 기존 홈페이지를 유지하고 새 사이트를 생성합니다. 개인 비공개 GitHub 저장소 `https://github.com/yblee110/moducon-2026`에 전체 소스와 기존 8개 커밋을 업로드했습니다. 새 Site ID는 `appgprj_6abc6a65ee748191825c5de430fac872`이며 manifest에 저장했습니다. 사이트 게시 상태는 Sites 조회 결과를 확인합니다. 새 Codex Cloud 환경의 최초 생성·게시는 사용자 설정을 기다리고 있으며 완료를 확인하지 않았습니다.
+사용자는 이 대화에서 만든 작업을 modulabs 조직 GitHub 저장소와 Codex Cloud로 옮겨 별도의 새 사이트로 게시하기를 요청했습니다. 기존 홈페이지를 유지하고 새 사이트를 생성합니다. modulabs 조직의 비공개 GitHub 저장소 `https://github.com/modulabs/moducon-2026`에 전체 소스와 기존 8개 커밋을 업로드했습니다. 새 Site ID는 `appgprj_6abc6a65ee748191825c5de430fac872`이며 manifest에 저장했습니다. 사이트 게시 상태는 Sites 조회 결과를 확인합니다. 새 Codex Cloud 환경의 최초 생성·게시는 사용자 설정을 기다리고 있으며 완료를 확인하지 않았습니다.
 
 ## 원본 상태
 
@@ -27,9 +27,9 @@
 
 ## 이전 순서
 
-1. 개인 비공개 저장소 `yblee110/moducon-2026`을 사용합니다. 저장소를 다시 만들지 않습니다.
+1. modulabs 조직의 비공개 저장소 `modulabs/moducon-2026`을 사용합니다. 저장소를 다시 만들지 않습니다.
 2. 이 `project/`의 내용을 저장소 루트에 올립니다. `.openai/hosting.json`, 이미지, 글꼴 등 숨김 파일·자산도 포함합니다. 인증정보는 저장소에 넣지 않습니다.
-3. 새 작업에서 Work in > Cloud > Select environment > Create environment를 엽니다. 저장소를 선택하고 Get started로 환경을 준비합니다.
+3. ChatGPT 드롭다운에서 Codex를 선택한 뒤 새 작업에서 Work in > Cloud > Select environment > Create environment를 엽니다. 저장소를 선택하고 Get started로 환경을 준비합니다.
 4. 프로젝트는 정적 HTML이므로 별도 패키지 설치·빌드 없이 Python 3 정적 서버로 확인할 수 있습니다. `node --check dist/app.js`로 JavaScript 문법을 확인합니다.
 5. 설정과 검사 결과를 검토한 뒤 Publish를 눌러 Environment published를 확인합니다. 이는 실행 환경 준비 완료이며 웹사이트 게시 완료는 아닙니다.
 6. Start a new task로 새 Cloud 작업을 시작합니다. Sites 기능이 제공되면 manifest의 `appgprj_6abc6a65ee748191825c5de430fac872`를 조회하여 이 새 사이트의 작업을 이어갑니다. 새 Site를 중복 생성하지 않습니다. 게시 도구가 없으면 임의로 게시 완료를 주장하지 말고 사용 가능한 호스팅 방법을 확인합니다.
