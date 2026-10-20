@@ -304,5 +304,40 @@
     "file": "session/k1/index.html",
     "title": "뇌과학자가 바라보는 AI 시대의 미래 | MODUCON",
     "source": "https://moducon.modulabs.co.kr/session/k1"
+  },
+  {
+    "path": "/session/2026",
+    "file": "session/2026/index.html",
+    "title": "MODUCON 2026 | 세션"
+  },
+  {
+    "path": "/session/2026/lee-yong-hwan",
+    "file": "session/2026/lee-yong-hwan/index.html",
+    "title": "횡단면 메가 알파를 활용한 시장 중립 암호화폐 투자 전략 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/lee-tae-kyung",
+    "file": "session/2026/lee-tae-kyung/index.html",
+    "title": "펀더멘탈 퀀트 투자: 투자 원칙에서 전략까지 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/dao-lab-together",
+    "file": "session/2026/dao-lab-together/index.html",
+    "title": "AI시대, 함께 일하고 배우고 즐기기 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/kim-min-hyun",
+    "file": "session/2026/kim-min-hyun/index.html",
+    "title": "소버린 개인과 Web3 AI - 에이전트경제의형성과기업의성장전략 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/shin-tae-uk",
+    "file": "session/2026/shin-tae-uk/index.html",
+    "title": "타코야키 로봇으로 탐구하는 Task-Driven Physical AI | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/yoo-yong-gyun",
+    "file": "session/2026/yoo-yong-gyun/index.html",
+    "title": "인공지능 발전과 인간과학자의 역할 변화 | MODUCON 2026"
   }
 ]

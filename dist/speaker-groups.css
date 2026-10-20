@@ -1,0 +1,14 @@
+/* Layout additions for joint sessions and speakers without a supplied photo. */
+.session-2026 .session-speaker-group {
+  min-width: 0;
+}
+
+.session-2026 .session-speaker-group > .session-speaker-profile + .session-speaker-profile {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #e2e7eb;
+}
+
+.session-2026 .session-speaker-profile--text-only {
+  grid-template-columns: minmax(0, 1fr);
+}

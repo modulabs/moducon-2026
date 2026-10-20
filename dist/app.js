@@ -231,7 +231,8 @@
   };
   all("button").filter((button) => button.textContent.trim() === "공유하기").forEach((button) => {
     button.addEventListener("click", async () => {
-      const isCurrentEvent = ["/", "/faq"].includes(document.body.dataset.route);
+      const route = document.body.dataset.route || "";
+      const isCurrentEvent = ["/", "/faq", "/session/2026"].includes(route) || route.startsWith("/session/2026/");
       const share = {
         title: isCurrentEvent ? "MODUCON 2026 — Deeper in AI" : "MODUCON 2025 — From AI to Infinity",
         text: isCurrentEvent ? "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다." : "모두콘 2025에 초대합니다.",

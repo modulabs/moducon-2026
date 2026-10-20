@@ -1,0 +1,39 @@
+/* Responsive speaker portrait layout. */
+.session-2026 .session-speaker-profile {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  align-items: start;
+  gap: 32px;
+}
+.session-2026 .session-speaker-portrait {
+  margin: 0;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f5f5f5;
+}
+.session-2026 .session-speaker-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.session-2026 .session-speaker-biography {
+  min-width: 0;
+}
+.session-2026 .session-speaker-biography .session-speaker-affiliation {
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) and (min-width: 701px) {
+  .session-2026 .session-speaker-profile {
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 24px;
+  }
+  .session-2026 .session-speaker-portrait { width: 160px; }
+}
+@media (max-width: 700px) {
+  .session-2026 .session-speaker-profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .session-2026 .session-speaker-portrait { width: 168px; }
+}

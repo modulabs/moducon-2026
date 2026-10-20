@@ -1,0 +1,473 @@
+/* Shared presentation for the 2026 session list and detail pages. */
+@font-face {
+  font-family: "Moducon Session";
+  src: url("assets/P2PJKk0r3P2rBRbT0fNX64L4.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moducon Session";
+  src: url("assets/Vp2TEKcnQ97UeUF7QbTO9YlJo.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.session-2026,
+.session-2026 * {
+  box-sizing: border-box;
+}
+
+.session-2026 {
+  --moducon-brand: #F7585C;
+  color: #172331;
+  background: #fff;
+  font-family: "Moducon Session", "Apple SD Gothic Neo", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.session-2026 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.session-2026 button {
+  font: inherit;
+}
+
+.session-2026 h1,
+.session-2026 h2,
+.session-2026 p,
+.session-2026 dl,
+.session-2026 dd,
+.session-2026 ul {
+  margin: 0;
+}
+
+.session-2026 h1,
+.session-2026 h2,
+.session-2026 strong {
+  font-weight: 700;
+}
+
+.session-2026 .session-shell {
+  width: min(1080px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+.session-2026 .session-header {
+  color: #fff;
+  background: #101112;
+}
+
+.session-2026 .session-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 88px;
+}
+
+.session-2026 .session-logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.session-2026 .session-logo img {
+  display: block;
+  width: 132px;
+  height: auto;
+}
+
+.session-2026 .session-navigation ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.session-2026 .session-navigation ul a {
+  display: block;
+  padding: 10px 0;
+  color: #d5dbe0;
+  font-size: 16px;
+}
+
+.session-2026 .session-navigation ul a:hover,
+.session-2026 .session-navigation ul a[aria-current] {
+  color: var(--moducon-brand);
+}
+
+.session-2026 .session-heading {
+  padding: 60px 0 56px;
+  background: #eff9fc;
+  border-bottom: 1px solid #dfedf1;
+}
+
+.session-2026 .session-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-bottom: 32px;
+  font-size: 15px;
+  color: var(--moducon-brand);
+}
+
+.session-2026 .session-back:hover {
+  color: var(--moducon-brand);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.session-2026 .session-eyebrow {
+  margin-bottom: 20px;
+  color: var(--moducon-brand);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.session-2026 h1 {
+  max-width: 920px;
+  font-size: clamp(30px, 3.4vw, 48px);
+  line-height: 1.35;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+.session-2026[data-route="/session/2026"] h1 {
+  color: var(--moducon-brand);
+}
+
+.session-2026 .session-event-date {
+  margin-top: 20px;
+  color: #455869;
+  font-size: 18px;
+}
+
+.session-2026 .session-track {
+  display: inline-block;
+  padding: 5px 13px;
+  color: #153f50;
+  background: #d2f2f7;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.session-2026 .session-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 44px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid #cddfe5;
+}
+
+.session-2026 .session-meta dt {
+  margin-bottom: 4px;
+  color: #526675;
+  font-size: 14px;
+}
+
+.session-2026 .session-meta dd {
+  font-size: 18px;
+}
+
+.session-2026 .session-content {
+  padding-top: 64px;
+}
+
+.session-2026 .session-section {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid #e2e7eb;
+}
+
+.session-2026 .session-section h2 {
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: -.03em;
+}
+
+.session-2026 .session-prose {
+  color: #3d4a56;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.session-2026 .session-prose p + p {
+  margin-top: 16px;
+}
+
+.session-2026 .session-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin-top: 28px;
+  list-style: none;
+}
+
+.session-2026 .session-keywords li {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #f1f4f6;
+  color: #455869;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.session-2026 .session-speaker-name {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -.03em;
+}
+
+.session-2026 .session-speaker-affiliation {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: #526675;
+  font-size: 16px;
+}
+
+.session-2026 .session-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.session-2026 .session-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 22px;
+  border: 1px solid #ccd5dc;
+  border-radius: 100px;
+  background: #fff;
+  color: #172331;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.session-2026 .session-button:hover {
+  background: #eff9fc;
+}
+
+.session-2026 .session-button--primary {
+  color: #fff;
+  background: #153f50;
+  border-color: #153f50;
+}
+
+.session-2026 .session-button--primary:hover {
+  background: #205b70;
+}
+
+.session-2026 .session-list {
+  padding: 0;
+  list-style: none;
+}
+
+.session-2026 .session-card {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr) 32px;
+  gap: 32px;
+  align-items: start;
+  padding: 36px;
+  border: 1px solid #dce4e9;
+  border-radius: 16px;
+}
+
+.session-2026 .session-card:hover {
+  border-color: #72aab9;
+  background: #f8fcfd;
+}
+
+.session-2026 .session-card-time {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 21px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.session-2026 .session-card-room {
+  display: block;
+  margin-top: 10px;
+  color: #526675;
+  font-size: 15px;
+}
+
+.session-2026 .session-card h2 {
+  font-size: 27px;
+  line-height: 1.5;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+
+.session-2026 .session-card-speaker {
+  margin-top: 22px;
+}
+
+.session-2026 .session-card-speaker strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.session-2026 .session-card-speaker span {
+  color: #526675;
+  font-size: 15px;
+}
+
+.session-2026 .session-card-arrow {
+  font-size: 28px;
+  line-height: 1.5;
+  color: #17627a;
+}
+
+.session-2026 .session-footer {
+  margin-top: 100px;
+  padding: 36px 0;
+  border-top: 1px solid #e2e7eb;
+}
+
+.session-2026 .session-footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.session-2026 .session-footer small {
+  color: #64727d;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .session-2026 .session-shell {
+    width: calc(100% - 40px);
+  }
+
+  .session-2026 .session-navigation {
+    gap: 12px;
+    min-height: 80px;
+  }
+
+  .session-2026 .session-logo img {
+    width: 108px;
+  }
+
+  .session-2026 .session-navigation ul {
+    gap: 12px;
+  }
+
+  .session-2026 .session-navigation ul a {
+    font-size: 14px;
+  }
+
+  .session-2026 .session-heading {
+    padding: 36px 0;
+  }
+
+  .session-2026 .session-back {
+    margin-bottom: 20px;
+  }
+
+  .session-2026 .session-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 16px;
+    margin-top: 28px;
+    padding-top: 24px;
+  }
+
+  .session-2026 .session-meta dd {
+    font-size: 16px;
+  }
+
+  .session-2026 .session-event-date {
+    font-size: 16px;
+  }
+
+  .session-2026 .session-content {
+    padding-top: 36px;
+  }
+
+  .session-2026 .session-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+
+  .session-2026 .session-prose {
+    font-size: 16px;
+  }
+
+  .session-2026 .session-speaker-name {
+    font-size: 26px;
+  }
+
+  .session-2026 .session-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .session-2026 .session-card-schedule {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .session-2026 .session-card-time,
+  .session-2026 .session-card-room {
+    margin: 0;
+  }
+
+  .session-2026 .session-card h2 {
+    font-size: 23px;
+  }
+
+  .session-2026 .session-card-arrow {
+    display: none;
+  }
+
+  .session-2026 .session-footer {
+    margin-top: 64px;
+    padding: 28px 0;
+  }
+}
+
+@media (max-width: 359px) {
+  .session-2026 .session-navigation {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 0 8px;
+  }
+
+  .session-2026 .session-navigation ul {
+    gap: 24px;
+  }
+}

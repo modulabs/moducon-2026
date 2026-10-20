@@ -1,5 +1,6 @@
-/* To restore the homepage sessions, set data-session-visibility="visible"
-   on the homepage body. Session pages and their content remain available. */
-body[data-route="/"][data-session-visibility="hidden"] [data-home-sessions] {
+/* Set data-session-visibility="visible" on each current-event page to expose
+   its session navigation. Direct session URLs remain available. */
+body[data-session-visibility="hidden"] [data-home-sessions],
+body[data-session-visibility="hidden"] [data-session-navigation] {
   display: none !important;
 }
