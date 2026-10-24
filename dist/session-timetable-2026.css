@@ -127,8 +127,27 @@
 }
 
 .session-timetable .timetable-speakers p + p {
-  margin-top: 6px;
+  margin-top: 10px;
 }
+
+.session-timetable .timetable-speaker {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.session-timetable .timetable-speaker-avatar {
+  display: block;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e6ebed;
+}
+
+.session-timetable .timetable-speaker-text { min-width: 0; }
 
 .session-timetable .timetable-speakers strong {
   font-weight: 500;
@@ -154,6 +173,12 @@
 }
 
 @media (max-width: 809px) {
+  .session-timetable .timetable-speaker-avatar {
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
   .session-timetable .timetable-hero {
     min-height: 300px;
     padding: 40px 0;

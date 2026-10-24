@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 // Only already-published, explicitly approved detail pages belong in this list.
@@ -20,13 +20,19 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
 const tracks = ["C", "D"];
 const rooms = { C: "B147", D: "B146" };
+// Only the small listing portraits are cropped; detail page photos stay intact.
+const portraitPositions = {
+  "한재선": "50% 0%", "백종원": "50% 20%", "신지현": "50% 0%",
+  "조현욱": "50% 0%", "김민현": "50% 0%", "이용환": "50% 25%",
+};
 const required = (value, message) => {
   if (!value) throw new Error(message);
   return value;
 };
 const capture = (html, expression, label) => required(html.match(expression)?.[1], `Missing ${label}`).trim();
 const sessions = approvedSlugs.map((slug) => {
-  const html = readFileSync(join(dist, "session", "2026", slug, "index.html"), "utf8");
+  const detailPath = join(dist, "session", "2026", slug, "index.html");
+  const html = readFileSync(detailPath, "utf8");
   const title = capture(html, /<h1[^>]*>([\s\S]*?)<\/h1>/, `${slug}: title`);
   const track = capture(html, /class="session-track">Track ([A-Z])<\/span>/, `${slug}: track`);
   const room = capture(html, /<dt>장소<\/dt>\s*<dd>이화여대 ECC · (B\d+)<\/dd>/, `${slug}: room`);
@@ -36,7 +42,18 @@ const sessions = approvedSlugs.map((slug) => {
   const names = [...html.matchAll(/<p class="session-speaker-name">([\s\S]*?)<\/p>/g)].map((m) => m[1].trim());
   const affiliations = [...html.matchAll(/<p class="session-speaker-affiliation">([\s\S]*?)<\/p>/g)].map((m) => m[1].trim());
   required(names.length && names.length === affiliations.length, `${slug}: incomplete speaker information`);
-  return { slug, title, track, room, names, affiliations, start: times[0][2], end: times[1][2], startDate: times[0][1], endDate: times[1][1] };
+  const profiles = [...html.matchAll(/<div class="session-speaker-profile(?: [^"]*)?">([\s\S]*?)(?=<div class="session-speaker-profile(?: [^"]*)?">|<\/section>)/g)].map((m) => m[1]);
+  required(profiles.length === names.length, `${slug}: review speaker/photo association`);
+  const portraits = profiles.map((profile, index) => {
+    required(capture(profile, /<p class="session-speaker-name">([\s\S]*?)<\/p>/, `${slug}: portrait name`) === names[index], `${slug}: portrait/name mismatch`);
+    const src = profile.match(/<figure class="session-speaker-portrait">[\s\S]*?<img\b[^>]*\bsrc="([^"]+)"/)?.[1];
+    if (!src) return null;
+    const imagePath = resolve(dirname(detailPath), src);
+    const asset = relative(dist, imagePath).split(sep).join("/");
+    required(asset.startsWith("assets/") && existsSync(imagePath), `${slug}: missing local portrait`);
+    return { asset, position: portraitPositions[names[index]] || "50% 50%" };
+  });
+  return { slug, title, track, room, names, affiliations, portraits, start: times[0][2], end: times[1][2], startDate: times[0][1], endDate: times[1][1] };
 }).sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end) || a.track.localeCompare(b.track));
 
 const groups = new Map();
@@ -49,12 +66,16 @@ for (const session of sessions) {
 }
 
 function card(session, prefix, timeId) {
-  const { slug, title, track, room, names, affiliations } = session;
+  const { slug, title, track, room, names, affiliations, portraits } = session;
   return `<a class="timetable-card" href="${prefix}session/2026/${slug}/index.html" data-local-route="/session/2026/${slug}" data-session-slug="${slug}" aria-labelledby="${slug}-title ${slug}-speakers" aria-describedby="${timeId} ${slug}-track">
               <p class="timetable-card-track" id="${slug}-track">Track ${track} <span aria-hidden="true">·</span> ${room}</p>
               <h3 id="${slug}-title">${title}</h3>
               <div class="timetable-speakers" id="${slug}-speakers">
-                ${names.map((name, index) => `<p><strong>${name}</strong> ${affiliations[index]}</p>`).join("\n                ")}
+                ${names.map((name, index) => {
+                  const portrait = portraits[index];
+                  const image = portrait ? `<img class="timetable-speaker-avatar" src="${prefix}${portrait.asset}" width="36" height="36" alt="" loading="lazy" decoding="async" style="object-position:${portrait.position}">` : "";
+                  return `<p class="timetable-speaker">${image}<span class="timetable-speaker-text"><strong>${name}</strong> ${affiliations[index]}</span></p>`;
+                }).join("\n                ")}
               </div>
               <span class="timetable-card-plus" aria-hidden="true">+</span>
             </a>`;
@@ -79,7 +100,9 @@ ${tracks.map((track) => {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="MODUCON 2026 세션 시간표. 2026년 12월 12일 이화여대 ECC에서 만나는 발표와 연사, 시간, 강의실을 확인하세요.">
   <title>MODUCON 2026 | Sessions</title>
-  <link rel="icon" href="${prefix}assets/0Oyb4t1XUJvqYT2GaZ8c6hXC7Y.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="${prefix}assets/brand-2026/favicon-2026-32.png">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="${prefix}assets/brand-2026/favicon-2026.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}assets/brand-2026/apple-touch-icon-2026.png">
   <link rel="stylesheet" href="${prefix}styles.css">
   <link rel="stylesheet" href="${prefix}home-sections.css">
   <link rel="stylesheet" href="${prefix}session-2026.css">
