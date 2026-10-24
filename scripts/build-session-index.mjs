@@ -73,7 +73,7 @@ function card(session, prefix, timeId) {
               <div class="timetable-speakers" id="${slug}-speakers">
                 ${names.map((name, index) => {
                   const portrait = portraits[index];
-                  const image = portrait ? `<img class="timetable-speaker-avatar" src="${prefix}${portrait.asset}" width="36" height="36" alt="" loading="lazy" decoding="async" style="object-position:${portrait.position}">` : "";
+                  const image = portrait ? `<img class="timetable-speaker-avatar" src="${prefix}${portrait.asset}" width="44" height="44" alt="" loading="lazy" decoding="async" style="object-position:${portrait.position}">` : "";
                   return `<p class="timetable-speaker">${image}<span class="timetable-speaker-text"><strong>${name}</strong> ${affiliations[index]}</span></p>`;
                 }).join("\n                ")}
               </div>
