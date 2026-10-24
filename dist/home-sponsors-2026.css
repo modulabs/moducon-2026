@@ -1,9 +1,10 @@
-/* Updated sponsors share one responsive layout; original organizer and partner artwork stays intact. */
+/* Optical logo sizing keeps the original artwork and aspect ratios intact. */
 body[data-route="/"] .home-partners-2026 {
   height: auto;
 }
 
-body[data-route="/"] .home-sponsor-grid {
+body[data-route="/"] .home-sponsor-grid,
+body[data-route="/"] .home-organizer-grid {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -15,7 +16,8 @@ body[data-route="/"] .home-sponsor-grid {
   overflow: visible;
 }
 
-body[data-route="/"] .home-sponsor-grid > div {
+body[data-route="/"] .home-sponsor-grid > div,
+body[data-route="/"] .home-organizer-grid > div {
   position: relative;
   flex: 0 1 260px;
   width: 260px;
@@ -24,23 +26,56 @@ body[data-route="/"] .home-sponsor-grid > div {
   min-width: 0;
 }
 
-body[data-route="/"] .home-sponsor-logo {
+body[data-route="/"] .home-sponsor-logo,
+body[data-route="/"] .home-organizer-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
 }
 
-body[data-route="/"] .home-sponsor-logo img {
+body[data-route="/"] .home-logo-artwork {
+  position: relative;
   display: block;
-  width: min(240px, calc(100% - 24px));
+  width: var(--logo-width);
+  max-width: calc(100% - 24px);
+  aspect-ratio: var(--logo-ratio);
+  overflow: hidden;
+  flex: none;
+}
+
+body[data-route="/"] .home-logo-artwork img {
+  position: absolute;
+  display: block;
+  top: var(--logo-top);
+  left: var(--logo-left);
+  width: var(--logo-scale);
   height: auto;
-  max-height: 72px;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
 }
 
+body[data-route="/"] [data-sponsor="kakao"] {
+  background: #ffcd00;
+}
+
+body[data-route="/"] .home-organizer-logo .framer-1cvyg2p,
+body[data-route="/"] .home-organizer-logo .framer-7hdiyz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 216px;
+  height: 50px;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (max-width: 809px) {
-  body[data-route="/"] .home-sponsor-grid {
+  body[data-route="/"] .home-sponsor-grid,
+  body[data-route="/"] .home-organizer-grid {
     gap: 10px;
   }
 }
