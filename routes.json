@@ -26,7 +26,7 @@
   {
     "path": "/session",
     "file": "session/index.html",
-    "title": "MODUCON 2025 | Sessions",
+    "title": "MODUCON 2026 | Sessions",
     "source": "https://moducon.modulabs.co.kr/session"
   },
   {
@@ -308,7 +308,7 @@
   {
     "path": "/session/2026",
     "file": "session/2026/index.html",
-    "title": "MODUCON 2026 | 세션"
+    "title": "MODUCON 2026 | Sessions"
   },
   {
     "path": "/session/2026/lee-yong-hwan",

@@ -1,0 +1,2697 @@
+{
+  "archive_year": 2025,
+  "archived_on": "2026-10-24",
+  "source_repository_commit": "f8886a618104d25e230cf2d59402be4f54b0ef41",
+  "source_site_url": "https://moducon.modulabs.co.kr/session/",
+  "scope": "Original session list and all pre-2026 session details with referenced local presentation assets. Exact original source bytes preserved.",
+  "session_html_count": 47,
+  "source_file_count": 114,
+  "source_bytes": 24248653,
+  "files": [
+    {
+      "path": "app.js",
+      "source_path": "dist/app.js",
+      "bytes": 11722,
+      "sha256": "c5043ed5f232e38ac041731fa65dde344996ad5aff8e622ad1c8c2a8601747e8"
+    },
+    {
+      "path": "assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2",
+      "source_path": "dist/assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2",
+      "bytes": 9444,
+      "sha256": "be1a6fa7f51ee9e020bdac48d7bdf07f75233473827cf7a66a3d09b15bb5a49d"
+    },
+    {
+      "path": "assets/0Oyb4t1XUJvqYT2GaZ8c6hXC7Y.png",
+      "source_path": "dist/assets/0Oyb4t1XUJvqYT2GaZ8c6hXC7Y.png",
+      "bytes": 2508,
+      "sha256": "b01a079261a1a46a6bfa7f4f4dc40c3e5fabc7a21e08ae90ab3e5dc61ebef91a"
+    },
+    {
+      "path": "assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+      "source_path": "dist/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+      "bytes": 4628,
+      "sha256": "9bed92e963c634e32445ddc792d62180fb8498a10d3f7c20a1e8d1e7de17adc4"
+    },
+    {
+      "path": "assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+      "source_path": "dist/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+      "bytes": 4236,
+      "sha256": "95a9e62cbe6b9d4c96b95bced1594c619d2e9b99793cd948bdd0a607e7ebd4f1"
+    },
+    {
+      "path": "assets/2TXZKBJMJVP3NQX7K7MGJDQFMD4ZMJR7.woff2",
+      "source_path": "dist/assets/2TXZKBJMJVP3NQX7K7MGJDQFMD4ZMJR7.woff2",
+      "bytes": 16228,
+      "sha256": "02b1ec0fad2289bac6ea7cafaa5202cdd730ac207092cc8532d4e8f99639ab88"
+    },
+    {
+      "path": "assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2",
+      "source_path": "dist/assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2",
+      "bytes": 7208,
+      "sha256": "606729efeb7c59b47470bf64ff71a8ba393ab0bed80f17482fd4ee995959fac6"
+    },
+    {
+      "path": "assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+      "source_path": "dist/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+      "bytes": 4960,
+      "sha256": "7f9d8e2207cc6b4bd89c20cef9742c05f04093aa8d2a92b1d0c4bf93663145af"
+    },
+    {
+      "path": "assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+      "source_path": "dist/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+      "bytes": 7080,
+      "sha256": "09d4eb010bb9140289383ee337ac5775b8caf7a830113cfbb071134bf2a354cb"
+    },
+    {
+      "path": "assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2",
+      "source_path": "dist/assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2",
+      "bytes": 25276,
+      "sha256": "52ff2ce7d1511770c47190716c455768641fc8a408f4cb480f7be227047ad651"
+    },
+    {
+      "path": "assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+      "source_path": "dist/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+      "bytes": 8896,
+      "sha256": "68cf5b575705c54b915a806a6666344a65b010388b588311629a8009af66b87a"
+    },
+    {
+      "path": "assets/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+      "source_path": "dist/assets/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+      "bytes": 25596,
+      "sha256": "af02a72246f53ad49c44a591921edbd39ec8258a03d8cc2e0532aa1e497e85b4"
+    },
+    {
+      "path": "assets/7lw0VWkeXrGYJT05oB3DsFy8BaY.woff2",
+      "source_path": "dist/assets/7lw0VWkeXrGYJT05oB3DsFy8BaY.woff2",
+      "bytes": 100176,
+      "sha256": "fb914a30c2e0e0e135d5fadedb1396abd8e52723b08baab8357b9dd241d5af02"
+    },
+    {
+      "path": "assets/CYbBu6dE3kvo4F9XZg6ajNGRkc.png",
+      "source_path": "dist/assets/CYbBu6dE3kvo4F9XZg6ajNGRkc.png",
+      "bytes": 6178354,
+      "sha256": "78f1baa0188a18f6c5b2cc0c99fe3d6259af359208d990a334006e080d2af2f3"
+    },
+    {
+      "path": "assets/DYHjxG0qXjopUuruoacfl5SA.woff2",
+      "source_path": "dist/assets/DYHjxG0qXjopUuruoacfl5SA.woff2",
+      "bytes": 30228,
+      "sha256": "a986b35a071cf28b9ec1977b0b73f2d8af1faf9c3b44fd1ccd2b8121b94d9abc"
+    },
+    {
+      "path": "assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+      "source_path": "dist/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+      "bytes": 8892,
+      "sha256": "305cc030ada673760c59e4f4ffac736ace0478598d957102c5574ab0b079f69e"
+    },
+    {
+      "path": "assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+      "source_path": "dist/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+      "bytes": 7116,
+      "sha256": "af9fa49a46e2b4bb090462e8222f43b426593ce31aca150401aa8ebf5c5b5929"
+    },
+    {
+      "path": "assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2",
+      "source_path": "dist/assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2",
+      "bytes": 27036,
+      "sha256": "af94eb9a265c32652e76960d9fc2eb4697fca35addad53fdad82640b0c3de8ae"
+    },
+    {
+      "path": "assets/G3FL4LTaa96H8ca4MBoVwAQ4M.woff",
+      "source_path": "dist/assets/G3FL4LTaa96H8ca4MBoVwAQ4M.woff",
+      "bytes": 1117204,
+      "sha256": "744e50b9780722eada9afc308712c7d1dc5176d8b46c315d010fa42fffb76fe6"
+    },
+    {
+      "path": "assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+      "source_path": "dist/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+      "bytes": 4268,
+      "sha256": "c0d105ab64a098680ba890a66228a54c03533d907c2812be8f09740772b6d349"
+    },
+    {
+      "path": "assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+      "source_path": "dist/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+      "bytes": 27380,
+      "sha256": "362b168da82d69bc67d2a358fa20c59151cb4ceac8a5506be6baef5e6827fa42"
+    },
+    {
+      "path": "assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+      "source_path": "dist/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+      "bytes": 9564,
+      "sha256": "0648a0666c626b3afc7ebfd187e3704cfd4b1fa4d7f774a08af01236101daab9"
+    },
+    {
+      "path": "assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+      "source_path": "dist/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+      "bytes": 25348,
+      "sha256": "88f8b52e9e88c8334d8a644d652c94df6bdf25c836729609e9a8f83d35189d11"
+    },
+    {
+      "path": "assets/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2",
+      "source_path": "dist/assets/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2",
+      "bytes": 25516,
+      "sha256": "50dca57f0b77918e0fb7dac998c3f5ef6b0c2a29657da97658a04f98ac532fc5"
+    },
+    {
+      "path": "assets/Mc7axi0jJ6Qvl798yo4BKPcWvIE.png",
+      "source_path": "dist/assets/Mc7axi0jJ6Qvl798yo4BKPcWvIE.png",
+      "bytes": 1798498,
+      "sha256": "5102a2425b7cca02ec3472b0de3899a60d6e422bf149f734c7b4991e740b49a2"
+    },
+    {
+      "path": "assets/Nv3lmqkx8pVuUYQYgSysp2ZXWW4.png",
+      "source_path": "dist/assets/Nv3lmqkx8pVuUYQYgSysp2ZXWW4.png",
+      "bytes": 6179804,
+      "sha256": "3435bbc01767ef564caf0311228b3aca003a05ce3d7109c5c38c946ad025ce27"
+    },
+    {
+      "path": "assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+      "source_path": "dist/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+      "bytes": 6652,
+      "sha256": "3d9aaa88875ebe3c7140cc0a43dfd88f844008e24720bb5095157b66c3a15a52"
+    },
+    {
+      "path": "assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2",
+      "source_path": "dist/assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2",
+      "bytes": 4168,
+      "sha256": "34ef391e3b2bb8cef583e01523e29bf13dd558cffb91368114087badcce116d6"
+    },
+    {
+      "path": "assets/P2PJKk0r3P2rBRbT0fNX64L4.woff",
+      "source_path": "dist/assets/P2PJKk0r3P2rBRbT0fNX64L4.woff",
+      "bytes": 1123696,
+      "sha256": "6231269ba695835ca13b03cf411b4e68379993039b4033c373e4e9940ee5370d"
+    },
+    {
+      "path": "assets/QxmhnWTzLtyjIiZcfaLIJ8EFBXU.woff2",
+      "source_path": "dist/assets/QxmhnWTzLtyjIiZcfaLIJ8EFBXU.woff2",
+      "bytes": 30200,
+      "sha256": "52d518599e326f2a7bc668afc1ad095b22b71687aba9e6f1866ccbaad634fca5"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZ9hiA.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZ9hiA.woff2",
+      "bytes": 24452,
+      "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZBhiI2B.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZBhiI2B.woff2",
+      "bytes": 5100,
+      "sha256": "1aeb94ae9db052a4a2fe6f3046f928cff1fdbd7abdf870a9a01c13cae6faeba5"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZFhiI2B.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZFhiI2B.woff2",
+      "bytes": 36260,
+      "sha256": "e4bdf67b0cd15ca9e184509275be95db942195d3cc2b17f6a0452f2adf75d0bf"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZJhiI2B.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZJhiI2B.woff2",
+      "bytes": 10484,
+      "sha256": "509fca9c59564f9a846fa69bc647f9b050fc11abf1c9f6f3da71fb2d5ed425bd"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZNhiI2B.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZNhiI2B.woff2",
+      "bytes": 5432,
+      "sha256": "399f94d75aa73403e40e2353e8c0cc75c38f7362a6ca263b3b02d9723157ffe5"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZthiI2B.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZthiI2B.woff2",
+      "bytes": 7972,
+      "sha256": "6c2a37f82a676bcd441b735e4e2cda4edb8873a059ab9c362a84f0711f257041"
+    },
+    {
+      "path": "assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZxhiI2B.woff2",
+      "source_path": "dist/assets/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZxhiI2B.woff2",
+      "bytes": 7944,
+      "sha256": "9c5a897f9d9fcfe60d90631d766ae62b4bf1edd76633fa7a4b2f8c87e036789b"
+    },
+    {
+      "path": "assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+      "source_path": "dist/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+      "bytes": 26076,
+      "sha256": "3f6cafab2760e6bd3f59cefde6e45b14e57b8d05d0e63dd30b2e5927e848dab0"
+    },
+    {
+      "path": "assets/Vp2TEKcnQ97UeUF7QbTO9YlJo.woff",
+      "source_path": "dist/assets/Vp2TEKcnQ97UeUF7QbTO9YlJo.woff",
+      "bytes": 1129620,
+      "sha256": "b02e6d7d8606f13f12682bc4d43575d403a9cbb2d662f6f4f137dba384633267"
+    },
+    {
+      "path": "assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+      "source_path": "dist/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+      "bytes": 27736,
+      "sha256": "e38dae845a9fcdd07cf1728744263315aa3226f0bbb9dc53b3bd533ca245b034"
+    },
+    {
+      "path": "assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2",
+      "source_path": "dist/assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2",
+      "bytes": 6984,
+      "sha256": "9db34707de1cc86da27ad2a92d2279ccb515cb870ae3c1978a69c47e0bfd0dc0"
+    },
+    {
+      "path": "assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+      "source_path": "dist/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+      "bytes": 4504,
+      "sha256": "8d68edfec2489a4cf7478dfeb1bceae1d4661fe42d887ec5e01e5e3f0e12d2fd"
+    },
+    {
+      "path": "assets/ZRl8AlxwsX1m7xS1eJCiSPbztg.woff2",
+      "source_path": "dist/assets/ZRl8AlxwsX1m7xS1eJCiSPbztg.woff2",
+      "bytes": 30404,
+      "sha256": "a0277bda58668bd5e0c12c8e03f28ae20aa1f7afb538f31543d51b7d26334bc0"
+    },
+    {
+      "path": "assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+      "source_path": "dist/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+      "bytes": 4168,
+      "sha256": "f2207c07c5ac395d1d8c33f46655ded6aea7e66269431e3f943693c0318441dc"
+    },
+    {
+      "path": "assets/cugnVhSraaRyANCaUtI5FV17wk.woff2",
+      "source_path": "dist/assets/cugnVhSraaRyANCaUtI5FV17wk.woff2",
+      "bytes": 6572,
+      "sha256": "a81a33090e1786c391a37f4cc930d180c492f9e0e3d27b567b65a99a25bf2cf9"
+    },
+    {
+      "path": "assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2",
+      "source_path": "dist/assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2",
+      "bytes": 4172,
+      "sha256": "45604c5c98fe3f13488e1d0ebfdd3cfe21d4222ed1426afa680ada83a5f8a4a7"
+    },
+    {
+      "path": "assets/g0c8vEViiXNlKAgI4Ymmk3Ig.woff2",
+      "source_path": "dist/assets/g0c8vEViiXNlKAgI4Ymmk3Ig.woff2",
+      "bytes": 29696,
+      "sha256": "0e9f028b2d41c7978ff10b67d57b06eb4158f11db878f322017327c08d2319e3"
+    },
+    {
+      "path": "assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2",
+      "source_path": "dist/assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2",
+      "bytes": 4528,
+      "sha256": "1ffe4077cf4c481f787eee22edaff1ef2085cb36b87b586921cc2c910baf14db"
+    },
+    {
+      "path": "assets/jn4BtSPLlS0NDp1KiFAtFKiiY0o.woff2",
+      "source_path": "dist/assets/jn4BtSPLlS0NDp1KiFAtFKiiY0o.woff2",
+      "bytes": 27364,
+      "sha256": "fa6a61a8262fb38f129185fb97e8480380ae6e6327b6ee1760d559df5dc2d5d1"
+    },
+    {
+      "path": "assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2",
+      "source_path": "dist/assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2",
+      "bytes": 7376,
+      "sha256": "806ba2d7921651e6d9b1da8aac8745cab75d932a65aaa81f04faebb1ea249595"
+    },
+    {
+      "path": "assets/mYcqTSergLb16PdbJJQMl9ebYm4.woff2",
+      "source_path": "dist/assets/mYcqTSergLb16PdbJJQMl9ebYm4.woff2",
+      "bytes": 40680,
+      "sha256": "4dcf0bb023faef4032ff273f39de43b9964776375e9a0e21165d7f57c960db95"
+    },
+    {
+      "path": "assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2",
+      "source_path": "dist/assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2",
+      "bytes": 8716,
+      "sha256": "2d3bec40b65f99387f999ecfdde3e0332485d141f0690c529d7a050287f60a5d"
+    },
+    {
+      "path": "assets/nhSQpBRqFmXNUBY2p5SENQ8NplQ.woff2",
+      "source_path": "dist/assets/nhSQpBRqFmXNUBY2p5SENQ8NplQ.woff2",
+      "bytes": 17452,
+      "sha256": "47cc87ee37d39ecbec83205f2dca606fecdd4871064fe1b4720341801e5b99d3"
+    },
+    {
+      "path": "assets/s7NH6sl7w4NU984r5hcmo1tPSYo.woff2",
+      "source_path": "dist/assets/s7NH6sl7w4NU984r5hcmo1tPSYo.woff2",
+      "bytes": 97620,
+      "sha256": "0d085359f8883895fa9597ee4929680cf8891b94d2d4827e0ace0deba7bc8f5d"
+    },
+    {
+      "path": "assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2",
+      "source_path": "dist/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2",
+      "bytes": 27900,
+      "sha256": "fad48f71e77d72b44122a1d978820a7e7215b84f9a9c0e3a31d97d5987a710e9"
+    },
+    {
+      "path": "assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+      "source_path": "dist/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+      "bytes": 6672,
+      "sha256": "43cf206edf89348171df529aac13738dd2155528d009cb72ef283390623058bd"
+    },
+    {
+      "path": "assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+      "source_path": "dist/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+      "bytes": 7556,
+      "sha256": "a83d6869a7a608286201edcfdb78bcfbc0a673c6074d16b3e144bd63f42434a3"
+    },
+    {
+      "path": "assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+      "source_path": "dist/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+      "bytes": 27404,
+      "sha256": "4107b11930c4eef1f6ae5a76d441562e6d21a601f1781f37fd085542cd87412b"
+    },
+    {
+      "path": "assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2",
+      "source_path": "dist/assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2",
+      "bytes": 4828,
+      "sha256": "3b65ffb4188b763b66aa4300c9131de2b3d6c0d0fdbffea3e63a2ccc7f174a40"
+    },
+    {
+      "path": "assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+      "source_path": "dist/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+      "bytes": 7360,
+      "sha256": "992c5fd3bac230fa179ce0d63f6c032bc08d28678771173cb057e91d0cdde997"
+    },
+    {
+      "path": "assets/wvRJwJ5kf80Td6Hea4cVvVRbw.woff",
+      "source_path": "dist/assets/wvRJwJ5kf80Td6Hea4cVvVRbw.woff",
+      "bytes": 1126268,
+      "sha256": "e476f124e88472078cf472ac09768331f93f76063a52183ff303a192adea800a"
+    },
+    {
+      "path": "assets/wx5nfqEgOXnxuFaxB0Mn9OhmcZA.woff2",
+      "source_path": "dist/assets/wx5nfqEgOXnxuFaxB0Mn9OhmcZA.woff2",
+      "bytes": 14936,
+      "sha256": "0aac63e7db52b21f66fb6f7e3766a6b04851352971783287dadfbe712c3dc399"
+    },
+    {
+      "path": "assets/xDyoC8MeZr1IcsrowiTgCB1zz8.woff",
+      "source_path": "dist/assets/xDyoC8MeZr1IcsrowiTgCB1zz8.woff",
+      "bytes": 1115060,
+      "sha256": "3214d4fdb5bd41e10c9f0b5fa8c6ff2f1096b249665cdbf34948434ee7c51934"
+    },
+    {
+      "path": "assets/z4gPYPNQ00Y6AZM4l5FQFxTNrs.woff2",
+      "source_path": "dist/assets/z4gPYPNQ00Y6AZM4l5FQFxTNrs.woff2",
+      "bytes": 40704,
+      "sha256": "60e28083246f33c1ae7b91335e83b5943cf6ec82389a96d2a401eff409487b22"
+    },
+    {
+      "path": "page-styles/source-b9e808570f86ab70.css",
+      "source_path": "dist/page-styles/source-b9e808570f86ab70.css",
+      "bytes": 132813,
+      "sha256": "80e0025e83c3d5d60033af0f7c7288c994658521e3dcbb540530849f604d3323"
+    },
+    {
+      "path": "page-styles/source-bf1b2a84e8942725.css",
+      "source_path": "dist/page-styles/source-bf1b2a84e8942725.css",
+      "bytes": 126863,
+      "sha256": "f04a7adea391fcd873b583da28dc8d8b660b21cfd03259de8de50c2dcfdf3b67"
+    },
+    {
+      "path": "session/00-00/index.html",
+      "source_path": "dist/session/00-00/index.html",
+      "bytes": 66463,
+      "sha256": "b116830bb782a72227aa0d929824b520cf8a5afa380199047eca2c1b7b034df1"
+    },
+    {
+      "path": "session/00-01/index.html",
+      "source_path": "dist/session/00-01/index.html",
+      "bytes": 66023,
+      "sha256": "e5359c31ebf13df3360ddf2189452a0bd53c57962d7f855ece267588076f3210"
+    },
+    {
+      "path": "session/00-02/index.html",
+      "source_path": "dist/session/00-02/index.html",
+      "bytes": 65945,
+      "sha256": "928b7a96173e6b27487c8204aedc6a14fd5c654202fc835ccabcfd9fe57ff38b"
+    },
+    {
+      "path": "session/00-03/index.html",
+      "source_path": "dist/session/00-03/index.html",
+      "bytes": 65586,
+      "sha256": "72eb665ca08d62103d4098b9ae41dd627ced36cc2c47fb58a193795063c75891"
+    },
+    {
+      "path": "session/00-04/index.html",
+      "source_path": "dist/session/00-04/index.html",
+      "bytes": 66580,
+      "sha256": "0ea27f249fd88417407f26e2dc833963bc9a2faf40c2e342299430efe1ca5dc0"
+    },
+    {
+      "path": "session/00-05/index.html",
+      "source_path": "dist/session/00-05/index.html",
+      "bytes": 65604,
+      "sha256": "5e60974133224ce965b1d3f56edb7ae58d85f606d23c85037896014163cc362e"
+    },
+    {
+      "path": "session/00-06/index.html",
+      "source_path": "dist/session/00-06/index.html",
+      "bytes": 65254,
+      "sha256": "725034d7432054a27222fa67fdf67ec47d80f96ae1becae48513302b18ae35e7"
+    },
+    {
+      "path": "session/01-01/index.html",
+      "source_path": "dist/session/01-01/index.html",
+      "bytes": 68032,
+      "sha256": "3f6898288f7869891ed3d611fe28e1b127129cbd50c00b415cf42bc9fcfe8a4a"
+    },
+    {
+      "path": "session/01-02/index.html",
+      "source_path": "dist/session/01-02/index.html",
+      "bytes": 67733,
+      "sha256": "56f9dfc1e203f780015aa542fdf543798d369ac1676b2cb402e954e1e6381bdc"
+    },
+    {
+      "path": "session/01-03/index.html",
+      "source_path": "dist/session/01-03/index.html",
+      "bytes": 72125,
+      "sha256": "e1dc70c76edfd96929df9ac61a6c24ea338a744b197fa8a8748e028ced201168"
+    },
+    {
+      "path": "session/01-04/index.html",
+      "source_path": "dist/session/01-04/index.html",
+      "bytes": 67160,
+      "sha256": "653519364c8aad2ac004f9f31af22976874beb5233abc1d7bcfd7305dbcb5237"
+    },
+    {
+      "path": "session/01-05/index.html",
+      "source_path": "dist/session/01-05/index.html",
+      "bytes": 66686,
+      "sha256": "0b16ca38fff7a01dcdd56ce9adbea2302f5ce8f6b45de91c5a22c344c8dbf2a9"
+    },
+    {
+      "path": "session/01-06/index.html",
+      "source_path": "dist/session/01-06/index.html",
+      "bytes": 65488,
+      "sha256": "e3645111cb4683259c0602e8483ce8f5d13fec1e5edd025f9a4343fef49626db"
+    },
+    {
+      "path": "session/10-01/index.html",
+      "source_path": "dist/session/10-01/index.html",
+      "bytes": 67922,
+      "sha256": "03c165cfe78fae75ab4bf42fc5147b7ca713fc3bd555a7d8f92d73551f87ac82"
+    },
+    {
+      "path": "session/10-02/index.html",
+      "source_path": "dist/session/10-02/index.html",
+      "bytes": 66132,
+      "sha256": "1decf3645aab1dbb04b7e8cdfec4caf441880f8ee1439dec7a50bf72bd3f64df"
+    },
+    {
+      "path": "session/10-03/index.html",
+      "source_path": "dist/session/10-03/index.html",
+      "bytes": 66954,
+      "sha256": "27452f88c7a3d3e16a92cad28e4b57db5cf52de01f76ee24bff0e01d0658c0b2"
+    },
+    {
+      "path": "session/10-04/index.html",
+      "source_path": "dist/session/10-04/index.html",
+      "bytes": 65270,
+      "sha256": "798e2f7ed21ae1f3e7d534dcdb64d9d8a64963c320ec98140f87a38bb4f5c6f9"
+    },
+    {
+      "path": "session/10-05/index.html",
+      "source_path": "dist/session/10-05/index.html",
+      "bytes": 66170,
+      "sha256": "b6b774a0daa4e31a049a4b654fbec1cf30625dd220216217e061e350540f34f0"
+    },
+    {
+      "path": "session/10-06/index.html",
+      "source_path": "dist/session/10-06/index.html",
+      "bytes": 66251,
+      "sha256": "08e91522252ba083a05f7c59f401bbbab7b2808f780437d6a7d12438584fa497"
+    },
+    {
+      "path": "session/10-07/index.html",
+      "source_path": "dist/session/10-07/index.html",
+      "bytes": 65655,
+      "sha256": "41c72c898c74dd0b4dc42951d7b2577a50b39c1db793f1a11f71830a2feb0131"
+    },
+    {
+      "path": "session/10-08/index.html",
+      "source_path": "dist/session/10-08/index.html",
+      "bytes": 67629,
+      "sha256": "514f00cc6d08b35ea6d407a631929a23d235b5b57bcf87f0e5835d76abe75054"
+    },
+    {
+      "path": "session/10-09/index.html",
+      "source_path": "dist/session/10-09/index.html",
+      "bytes": 67301,
+      "sha256": "2ff35452e32f10cbc3e1c67892f90da1ea9648b6bde37096b8c2af2a3dc38110"
+    },
+    {
+      "path": "session/101-1/index.html",
+      "source_path": "dist/session/101-1/index.html",
+      "bytes": 66647,
+      "sha256": "f0479c5362f4472d9f2c79d7c2fbde09c24544472583b922e75c175e2ed67729"
+    },
+    {
+      "path": "session/101-2/index.html",
+      "source_path": "dist/session/101-2/index.html",
+      "bytes": 65131,
+      "sha256": "0338efd3a49ef7aad54dcdd2e30caedd3599108cc38e834c87b8fce2cd852360"
+    },
+    {
+      "path": "session/101-3/index.html",
+      "source_path": "dist/session/101-3/index.html",
+      "bytes": 66039,
+      "sha256": "eb4a26470bc48a961894c888ce38c3f9aa66bdf1de8097d88b3af18216c6520f"
+    },
+    {
+      "path": "session/101-4/index.html",
+      "source_path": "dist/session/101-4/index.html",
+      "bytes": 68111,
+      "sha256": "88dc3b04074ebfb8d142db151c38045b7c3dc27fa915cae1ed79fd3714c26718"
+    },
+    {
+      "path": "session/a1/index.html",
+      "source_path": "dist/session/a1/index.html",
+      "bytes": 65434,
+      "sha256": "cf85d48dc430f0c1b5c9e8df3aa466f63b516a777f412d5513319ae2a6a3bdde"
+    },
+    {
+      "path": "session/a2/index.html",
+      "source_path": "dist/session/a2/index.html",
+      "bytes": 66375,
+      "sha256": "310119db3e24913c285f6fe5cec4acbf9f52403a54154ec658686fc34f77c65a"
+    },
+    {
+      "path": "session/a3/index.html",
+      "source_path": "dist/session/a3/index.html",
+      "bytes": 65340,
+      "sha256": "6f91bcdd3dfc23aeece0a5ed181286057a3f41cf8de1fb9da7426ce908437d9c"
+    },
+    {
+      "path": "session/a4/index.html",
+      "source_path": "dist/session/a4/index.html",
+      "bytes": 65334,
+      "sha256": "9a86b97f60a3cd6d69e311b74eb6d8821f9acf13bad96fc1c607842db521c76d"
+    },
+    {
+      "path": "session/a5/index.html",
+      "source_path": "dist/session/a5/index.html",
+      "bytes": 65746,
+      "sha256": "ad274f749a989bdabf5d519919c142395e9ec70b673bd88cc191acd501ae680c"
+    },
+    {
+      "path": "session/a6/index.html",
+      "source_path": "dist/session/a6/index.html",
+      "bytes": 65839,
+      "sha256": "84b574b605ab132cd12e2f15e6430d6d579ad56182912e4726c4c50b9d059995"
+    },
+    {
+      "path": "session/b1/index.html",
+      "source_path": "dist/session/b1/index.html",
+      "bytes": 65727,
+      "sha256": "557f3b63f32b102589490174e26df29d7203e35b32ec9e1cd0eedc1179846c71"
+    },
+    {
+      "path": "session/b2/index.html",
+      "source_path": "dist/session/b2/index.html",
+      "bytes": 66052,
+      "sha256": "76999f45fd056225744ab0f37ce2e93176c57b54eca5ea2b997c5731aa48427f"
+    },
+    {
+      "path": "session/b3/index.html",
+      "source_path": "dist/session/b3/index.html",
+      "bytes": 65513,
+      "sha256": "3d89d4092c28214253f3a7ed94884200fb18dc3b6c713cfe6cc06a5ed5ce3060"
+    },
+    {
+      "path": "session/b4/index.html",
+      "source_path": "dist/session/b4/index.html",
+      "bytes": 65953,
+      "sha256": "8c8e5087f77b4069ae47cd489c8d774115d9f11d9daccdf1e8ddd2acf00d4592"
+    },
+    {
+      "path": "session/b5/index.html",
+      "source_path": "dist/session/b5/index.html",
+      "bytes": 65420,
+      "sha256": "cd977e9d58746a9f09558899683b110e1a2545158cb4a00b742ed5ec05b807c0"
+    },
+    {
+      "path": "session/b6/index.html",
+      "source_path": "dist/session/b6/index.html",
+      "bytes": 66574,
+      "sha256": "071eea83c25e3dbf41d2c48caaa5b1acd3605dfad3d7c640f5f610f125f8080d"
+    },
+    {
+      "path": "session/c1/index.html",
+      "source_path": "dist/session/c1/index.html",
+      "bytes": 65651,
+      "sha256": "a70aa921b24d08f65293d7c8f3663bf560716cca062a3447dbcdf4ffe763bf4a"
+    },
+    {
+      "path": "session/d1/index.html",
+      "source_path": "dist/session/d1/index.html",
+      "bytes": 65907,
+      "sha256": "e37f94bf9f4649b3f6ee52cb16286e5863ade06ee5dda6b0317a5bf3e179f358"
+    },
+    {
+      "path": "session/i-01/index.html",
+      "source_path": "dist/session/i-01/index.html",
+      "bytes": 65034,
+      "sha256": "3c4260a128107babe2c94038e1c65688d21a44a2d0e88c09bbd76af083adf279"
+    },
+    {
+      "path": "session/i-02/index.html",
+      "source_path": "dist/session/i-02/index.html",
+      "bytes": 67117,
+      "sha256": "b6331fc556073a235e06cc43005cb4dcb2dc59ed8b6def6cfbf3a44a26a1f550"
+    },
+    {
+      "path": "session/i-03/index.html",
+      "source_path": "dist/session/i-03/index.html",
+      "bytes": 72300,
+      "sha256": "2fd4d072b6f52f7ef11d5ac71cb8e943b4627e28530dc20edd9ac349c623cdbf"
+    },
+    {
+      "path": "session/i-04/index.html",
+      "source_path": "dist/session/i-04/index.html",
+      "bytes": 72590,
+      "sha256": "60a18dc48d8e006ada74df9193166627d74f0595be28b0c036ce1576204f81b8"
+    },
+    {
+      "path": "session/i-05/index.html",
+      "source_path": "dist/session/i-05/index.html",
+      "bytes": 70368,
+      "sha256": "b15039aad27e1f983564d0e8eb7853138cdf4594723a7478202ed0971af639e0"
+    },
+    {
+      "path": "session/index.html",
+      "source_path": "dist/session/index.html",
+      "bytes": 136320,
+      "sha256": "a539945dbca9f81e4bb1652d80c3dc66f063532dc2186327b91bbdcb6f382527"
+    },
+    {
+      "path": "session/k1/index.html",
+      "source_path": "dist/session/k1/index.html",
+      "bytes": 65516,
+      "sha256": "94eb145d8330bad60ecd8fe2f1508e92ea5b6e4726837412be92bf9854162f02"
+    },
+    {
+      "path": "styles.css",
+      "source_path": "dist/styles.css",
+      "bytes": 3094,
+      "sha256": "962eedb3a95abad25002ebc34a11f6d567cc200801c25bf89c199c46c396f231"
+    }
+  ],
+  "reference_check": {
+    "local_references_checked": 588,
+    "missing_local_dependencies": [],
+    "excluded_navigation": [
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-00/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/00-06/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/01-06/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-06/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-07/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-08/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/10-09/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-2/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-3/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/101-4/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a2/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a3/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a4/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a5/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/a6/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b2/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b3/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b4/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b5/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/b6/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/c1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/d1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-01/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-02/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-03/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-04/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/i-05/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/index.html",
+        "url": "../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../index.html",
+        "target": "index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      },
+      {
+        "from": "session/k1/index.html",
+        "url": "../../faq/index.html",
+        "target": "faq/index.html",
+        "reason": "non-session navigation; excluded from session archive"
+      }
+    ],
+    "remote_urls": [
+      "https://www.youtube.com/playlist?list=PLv6H9ngYdJbKS9QAzOD9GmGFVY8ViphRG"
+    ]
+  }
+}

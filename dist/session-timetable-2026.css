@@ -1,0 +1,237 @@
+/* The 2025 time-and-track layout, using the current event's navy/cyan artwork. */
+.session-2026.session-timetable {
+  color: #1f1f1f;
+}
+
+.session-timetable .timetable-hero {
+  display: flex;
+  align-items: center;
+  min-height: 350px;
+  padding: 48px 0;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(rgb(16 33 54 / 18%), rgb(16 33 54 / 18%)), url("assets/moducon26-hero-background.png") center / cover;
+  background-color: #102136;
+}
+
+.session-2026.session-timetable .timetable-hero h1 {
+  max-width: none;
+  color: #fff;
+  font-size: 56px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 24%);
+}
+
+.session-timetable .timetable-event {
+  margin-bottom: 14px;
+  color: #d9faff;
+  font-size: 14px;
+  letter-spacing: .04em;
+}
+
+.session-timetable .timetable-date {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 24%);
+}
+
+.session-timetable .timetable-section {
+  padding: 100px 0 20px;
+}
+
+.session-timetable .timetable-section > h2 {
+  margin: 0 20px 60px;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -.04em;
+  text-align: center;
+}
+
+.session-timetable .timetable-grid {
+  width: min(1320px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+.session-timetable .timetable-row,
+.session-timetable .timetable-columns {
+  display: grid;
+  grid-template-columns: 180px repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 10px;
+}
+
+.session-timetable .timetable-columns {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.session-timetable .timetable-columns small {
+  margin-left: 6px;
+  color: #777;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.session-timetable .timetable-row + .timetable-row {
+  margin-top: 10px;
+}
+
+.session-timetable .timetable-time {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+  padding-top: 11px;
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.session-timetable .timetable-cell {
+  min-width: 0;
+}
+
+.session-timetable .timetable-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 16px 18px 10px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  transition: background-color .2s ease;
+}
+
+.session-timetable .timetable-card:hover {
+  background: #e9e9e9;
+}
+
+.session-timetable .timetable-card-track {
+  margin-bottom: 18px;
+  color: #727272;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.session-timetable .timetable-card h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+}
+
+.session-timetable .timetable-speakers {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.session-timetable .timetable-speakers p + p {
+  margin-top: 6px;
+}
+
+.session-timetable .timetable-speakers strong {
+  font-weight: 500;
+}
+
+.session-timetable .timetable-card-plus {
+  align-self: flex-end;
+  margin-top: 10px;
+  color: #828282;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.session-timetable .timetable-preparing {
+  margin-inline: 20px;
+  text-align: center;
+  color: #64727d;
+  font-size: 16px;
+}
+
+.session-timetable .timetable-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 809px) {
+  .session-timetable .timetable-hero {
+    min-height: 300px;
+    padding: 40px 0;
+  }
+
+  .session-2026.session-timetable .timetable-hero h1 {
+    font-size: 45px;
+  }
+
+  .session-timetable .timetable-section {
+    padding-top: 70px;
+  }
+
+  .session-timetable .timetable-section > h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+
+  .session-timetable .timetable-grid {
+    width: calc(100% - 40px);
+  }
+
+  .session-timetable .timetable-columns,
+  .session-timetable .timetable-cell--empty {
+    display: none;
+  }
+
+  .session-timetable .timetable-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .session-timetable .timetable-row + .timetable-row {
+    margin-top: 20px;
+  }
+
+  .session-timetable .timetable-time {
+    padding: 8px 0 2px;
+  }
+
+  .session-timetable .timetable-card {
+    padding: 16px 18px 12px;
+  }
+
+  .session-timetable .timetable-interactive {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 479px) {
+  .session-2026.session-timetable .timetable-hero h1 {
+    font-size: 36px;
+  }
+
+  .session-timetable .timetable-event {
+    font-size: 12px;
+  }
+
+  .session-timetable .timetable-date {
+    font-size: 14px;
+  }
+
+  .session-timetable .timetable-section > h2 {
+    font-size: 30px;
+  }
+}
