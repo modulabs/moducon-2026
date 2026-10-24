@@ -41,7 +41,7 @@ body[data-route="/"] .home-rd-partners {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: inherit;
   width: 100%;
 }
 
@@ -94,6 +94,10 @@ body[data-route="/"] .home-organizer-logo .framer-7hdiyz {
 }
 
 @media (max-width: 809px) {
+  body[data-route="/"] .home-sponsor-contact {
+    order: 7;
+  }
+
   body[data-route="/"] .home-rd-partners {
     order: 2;
   }
