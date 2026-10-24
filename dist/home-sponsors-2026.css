@@ -47,12 +47,6 @@ body[data-route="/"] .home-rd-partners {
 
 body[data-route="/"] .home-rd-partners h3 {
   margin: 0;
-  color: #5c5c5c;
-  font-family: "Pretendard Medium", "Pretendard", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: -0.03em;
   text-align: center;
 }
 
