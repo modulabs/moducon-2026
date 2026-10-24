@@ -38,15 +38,7 @@
 }
 
 .session-timetable .timetable-section {
-  padding: 100px 0 20px;
-}
-
-.session-timetable .timetable-section > h2 {
-  margin: 0 20px 60px;
-  font-size: 40px;
-  line-height: 1.1;
-  letter-spacing: -.04em;
-  text-align: center;
+  padding: 60px 0 20px;
 }
 
 .session-timetable .timetable-grid {
@@ -172,12 +164,7 @@
   }
 
   .session-timetable .timetable-section {
-    padding-top: 70px;
-  }
-
-  .session-timetable .timetable-section > h2 {
-    margin-bottom: 30px;
-    font-size: 34px;
+    padding-top: 40px;
   }
 
   .session-timetable .timetable-grid {
@@ -221,7 +208,4 @@
     font-size: 14px;
   }
 
-  .session-timetable .timetable-section > h2 {
-    font-size: 30px;
-  }
 }
