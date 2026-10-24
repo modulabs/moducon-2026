@@ -344,5 +344,15 @@
     "path": "/session/2026/park-cheol",
     "file": "session/2026/park-cheol/index.html",
     "title": "DR4R LAB에서 살펴본 VLA 기술 동향과 강화학습 기반 로봇 지능의 발전 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/jo-hyun-wook",
+    "file": "session/2026/jo-hyun-wook/index.html",
+    "title": "Hello, NPU: 12명이 6개월간 NPU에 AI 모델을 올려 보며 만드는 실전 가이드 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/kim-do-hyuk",
+    "file": "session/2026/kim-do-hyuk/index.html",
+    "title": "Python & RPi5로 구현하는  엣지 AI 디바이스 생존기 | MODUCON 2026"
   }
 ]
