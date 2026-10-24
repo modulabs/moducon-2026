@@ -20,10 +20,17 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
 const tracks = ["C", "D"];
 const rooms = { C: "B147", D: "B146" };
-// Only the small listing portraits are cropped; detail page photos stay intact.
-const portraitPositions = {
-  "한재선": "50% 0%", "백종원": "50% 20%", "신지현": "50% 0%",
-  "조현욱": "50% 0%", "김민현": "50% 0%", "이용환": "50% 25%",
+// Reviewed square framing, in original image pixels. Only the listing uses it.
+// Keep the head visible at a similar size; never alter the original/detail photo.
+const portraitFrames = {
+  "한재선": { imageWidth: 5304, x: 945, y: 780, size: 3500 },
+  "백종원": { imageWidth: 1080, x: 0, y: 60, size: 1080 },
+  "신지현": { imageWidth: 4000, x: 1000, y: 500, size: 2100 },
+  "조현욱": { imageWidth: 413, x: 20, y: 0, size: 380 },
+  "신태욱": { imageWidth: 432, x: 10, y: 5, size: 420 },
+  "김민현": { imageWidth: 832, x: 188, y: 80, size: 476 },
+  "이용환": { imageWidth: 370, x: 20, y: 10, size: 330 },
+  "이태경": { imageWidth: 2048, x: 119, y: 57, size: 1812 },
 };
 const required = (value, message) => {
   if (!value) throw new Error(message);
@@ -51,7 +58,7 @@ const sessions = approvedSlugs.map((slug) => {
     const imagePath = resolve(dirname(detailPath), src);
     const asset = relative(dist, imagePath).split(sep).join("/");
     required(asset.startsWith("assets/") && existsSync(imagePath), `${slug}: missing local portrait`);
-    return { asset, position: portraitPositions[names[index]] || "50% 50%" };
+    return { asset, frame: portraitFrames[names[index]] };
   });
   return { slug, title, track, room, names, affiliations, portraits, start: times[0][2], end: times[1][2], startDate: times[0][1], endDate: times[1][1] };
 }).sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end) || a.track.localeCompare(b.track));
@@ -73,7 +80,11 @@ function card(session, prefix, timeId) {
               <div class="timetable-speakers" id="${slug}-speakers">
                 ${names.map((name, index) => {
                   const portrait = portraits[index];
-                  const image = portrait ? `<img class="timetable-speaker-avatar" src="${prefix}${portrait.asset}" width="44" height="44" alt="" loading="lazy" decoding="async" style="object-position:${portrait.position}">` : "";
+                  const frame = portrait?.frame;
+                  const percent = (value) => `${Number(value.toFixed(3))}%`;
+                  const framingClass = frame ? " timetable-speaker-avatar--framed" : "";
+                  const framingStyle = frame ? ` style="--portrait-width:${percent(frame.imageWidth / frame.size * 100)};--portrait-left:${percent(-frame.x / frame.size * 100)};--portrait-top:${percent(-frame.y / frame.size * 100)}"` : "";
+                  const image = portrait ? `<span class="timetable-speaker-avatar${framingClass}"${framingStyle} aria-hidden="true"><img src="${prefix}${portrait.asset}" alt="" loading="lazy" decoding="async"></span>` : "";
                   return `<p class="timetable-speaker">${image}<span class="timetable-speaker-text"><strong>${name}</strong> ${affiliations[index]}</span></p>`;
                 }).join("\n                ")}
               </div>
