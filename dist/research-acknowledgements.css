@@ -1,8 +1,12 @@
 .research-acknowledgements {
   box-sizing: border-box;
-  width: 100%;
-  padding: 72px 32px;
-  background: #f4f7f7;
+  flex: none;
+  width: calc(100% - 64px);
+  max-width: 1080px;
+  margin-top: 18px;
+  padding: 36px 0 0;
+  border-top: 1px solid #dbe5e4;
+  background: transparent;
   color: #20383d;
   font-family: "Pretendard", "Pretendard Medium", sans-serif;
   text-align: left;
@@ -12,18 +16,18 @@
 .research-acknowledgements *::before,
 .research-acknowledgements *::after { box-sizing: border-box; }
 .research-acknowledgements__inner { max-width: 1080px; margin: 0 auto; }
-.research-acknowledgements__header { margin-bottom: 32px; }
+.research-acknowledgements__header { margin-bottom: 28px; text-align: center; }
 .research-acknowledgements h2 {
   margin: 0 0 20px;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.04em;
 }
 .research-acknowledgements__header > p {
   max-width: 900px;
-  margin: 0;
-  font-size: 16px;
+  margin: 0 auto;
+  font-size: 15px;
   line-height: 1.8;
   word-break: keep-all;
   overflow-wrap: anywhere;
@@ -31,6 +35,7 @@
 .research-acknowledgements__program {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 12px;
   margin: 20px 0 0;
   color: #52666a;
@@ -42,10 +47,10 @@
 .research-acknowledgements__projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .research-project {
   min-width: 0;
-  padding: 32px;
+  padding: 28px;
   background: #fff;
   border: 1px solid #dbe5e4;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 .research-project__number {
   display: flex;
@@ -59,7 +64,7 @@
 }
 .research-project h3 {
   margin: 0 0 12px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -77,16 +82,13 @@
 .research-project__details > div + div { margin-top: 16px; }
 .research-project__details dt { margin: 0 0 4px; color: #52666a; font-size: 13px; font-weight: 600; line-height: 1.6; }
 .research-project__details dd { margin: 0; font-size: 15px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
-/* Match the exported page's partner order so this section precedes the footer. */
-@media (min-width: 810px) and (max-width: 1199.98px) {
-  .research-acknowledgements { order: 11; }
-}
-@media (max-width: 809.98px) {
-  .research-acknowledgements { order: 10; }
+/* The acknowledgement now belongs to the shared KHP support block. */
+@media (min-width: 810px) {
+  body[data-route="/"] .home-partners-2026 { padding-bottom: 80px; }
 }
 @media (max-width: 767px) {
-  .research-acknowledgements { padding: 48px 20px; }
-  .research-acknowledgements h2 { font-size: 24px; }
+  .research-acknowledgements { width: 100%; margin-top: 6px; padding: 28px 0 0; }
+  .research-acknowledgements h2 { font-size: 21px; }
   .research-acknowledgements__header > p { font-size: 15px; }
   .research-acknowledgements__program { display: block; }
   .research-acknowledgements__program dt { margin-bottom: 4px; }
