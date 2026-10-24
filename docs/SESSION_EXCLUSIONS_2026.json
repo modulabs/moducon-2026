@@ -1,0 +1,13 @@
+{
+  "event_year": 2026,
+  "cancelled_sessions": [
+    {
+      "name": "유용균",
+      "slug": "yoo-yong-gyun",
+      "title": "인공지능 발전과 인간과학자의 역할 변화",
+      "reason": "사용자 확인: 연사 불참",
+      "cancelled_on": "2026-10-24",
+      "restore_requires_user_approval": true
+    }
+  ]
+}

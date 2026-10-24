@@ -7,7 +7,6 @@ import { fileURLToPath } from "node:url";
 // Add a slug only after the user approves publication of its detail page.
 const approvedSlugs = [
   "dao-lab-together",
-  "yoo-yong-gyun",
   "jo-hyun-wook",
   "kim-do-hyuk",
   "shin-tae-uk",
