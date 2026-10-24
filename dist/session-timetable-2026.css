@@ -151,13 +151,6 @@
   line-height: 1;
 }
 
-.session-timetable .timetable-preparing {
-  margin-inline: 20px;
-  text-align: center;
-  color: #64727d;
-  font-size: 16px;
-}
-
 .session-timetable .timetable-sr-only {
   position: absolute;
   width: 1px;
@@ -213,9 +206,6 @@
     padding: 16px 18px 12px;
   }
 
-  .session-timetable .timetable-interactive {
-    padding-top: 80px;
-  }
 }
 
 @media (max-width: 479px) {
