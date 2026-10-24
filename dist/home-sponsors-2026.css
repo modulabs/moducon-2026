@@ -1,0 +1,46 @@
+/* Updated sponsors share one responsive layout; original organizer and partner artwork stays intact. */
+body[data-route="/"] .home-partners-2026 {
+  height: auto;
+}
+
+body[data-route="/"] .home-sponsor-grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 36px;
+  width: min(960px, 100%);
+  height: auto;
+  padding: 0;
+  overflow: visible;
+}
+
+body[data-route="/"] .home-sponsor-grid > div {
+  position: relative;
+  flex: 0 1 260px;
+  width: 260px;
+  max-width: 100%;
+  height: 100px;
+  min-width: 0;
+}
+
+body[data-route="/"] .home-sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+body[data-route="/"] .home-sponsor-logo img {
+  display: block;
+  width: min(240px, calc(100% - 24px));
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+}
+
+@media (max-width: 809px) {
+  body[data-route="/"] .home-sponsor-grid {
+    gap: 10px;
+  }
+}

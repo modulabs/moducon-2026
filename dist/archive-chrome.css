@@ -1,0 +1,13 @@
+/* Update only the current-site navigation; preserve the historical event art. */
+body[data-event-archive="2024"] nav {
+  --token-409a47fb-df9c-45e1-a84f-f309680a3ddc: #153f50;
+}
+
+body[data-event-archive="2024"] nav a[data-framer-name="Primary"]:hover {
+  background-color: #205b70 !important;
+}
+
+body[data-event-archive="2024"] nav a:focus-visible {
+  outline: 3px solid #36798a;
+  outline-offset: 4px;
+}

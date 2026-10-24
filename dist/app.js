@@ -1,6 +1,6 @@
 "use strict";
 
-/* MODUCON 2025 — framework-free interactions.
+/* MODUCON — framework-free interactions for the current event and archives.
  * Layout: index.html + reference.css. Enhancements: styles.css.
  * The original Framer runtime, analytics and tracking scripts are not used.
  */
@@ -234,9 +234,9 @@
       const route = document.body.dataset.route || "";
       const isCurrentEvent = ["/", "/faq", "/session", "/session/2026"].includes(route) || route.startsWith("/session/2026/");
       const share = {
-        title: isCurrentEvent ? "MODUCON 2026 — Deeper in AI" : "MODUCON 2025 — From AI to Infinity",
-        text: isCurrentEvent ? "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다." : "모두콘 2025에 초대합니다.",
-        url: "https://moducon.modulabs.co.kr/"
+        title: isCurrentEvent ? "MODUCON 2026 — Deeper in AI" : "지난 모두콘 행사 기록",
+        text: isCurrentEvent ? "2026년 12월 12일, 모두의연구소 11주년 모두콘 2026에 초대합니다." : "모두콘의 지난 발표와 행사 기록을 만나보세요.",
+        url: isCurrentEvent ? "https://moducon.modulabs.co.kr/" : `https://moducon.modulabs.co.kr${route.replace(/\/$/, "")}/`
       };
       try {
         if (navigator.share) {

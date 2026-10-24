@@ -1,0 +1,91 @@
+/* Keep historical lecture content intact while clearly identifying the archive. */
+body[data-archive-session="true"] nav.framer-3div9 {
+  --token-409a47fb-df9c-45e1-a84f-f309680a3ddc: #17627a;
+}
+
+body[data-archive-session="true"] .archive-session-logo {
+  display: block;
+  width: 132px;
+  height: auto;
+  object-fit: contain;
+}
+
+body[data-archive-session="true"] nav.framer-3div9 a[data-framer-name="Logo"] {
+  height: auto;
+  overflow: visible;
+}
+
+body[data-archive-session="true"] .archive-session-notice {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(800px, calc(100% - 32px));
+  margin: 32px auto 0;
+  padding: 18px 24px;
+  border: 1px solid #b9dbe4;
+  border-radius: 12px;
+  background: #eff9fc;
+  color: #153f50;
+  font-family: "Pretendard Medium", "Apple SD Gothic Neo", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+body[data-archive-session="true"] .archive-session-notice p {
+  margin: 0;
+}
+
+body[data-archive-session="true"] .archive-session-notice a {
+  color: #17627a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body[data-archive-session="true"] .framer-1gih8f0 {
+  padding-top: 64px;
+}
+
+body[data-archive-session="true"] .archive-session-share {
+  background-color: #102136;
+}
+
+body[data-archive-session="true"] .archive-session-share .framer-text {
+  --framer-text-color: #fff !important;
+  color: #fff;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 24%);
+}
+
+body[data-archive-session="true"] .archive-session-share button {
+  background-color: #fff !important;
+  color: #102136 !important;
+}
+
+body[data-archive-session="true"] .archive-session-share button:hover {
+  background-color: #e7faff !important;
+}
+
+body[data-archive-session="true"] .archive-session-share button:focus-visible,
+body[data-archive-session="true"] .archive-session-notice a:focus-visible {
+  outline: 3px solid #76e9fa;
+  outline-offset: 4px;
+}
+
+@media (max-width: 809px) {
+  body[data-archive-session="true"] .archive-session-logo {
+    width: 108px;
+  }
+  body[data-archive-session="true"] .archive-session-notice {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 24px;
+    padding: 16px 20px;
+  }
+  body[data-archive-session="true"] .framer-1gih8f0 {
+    padding-top: 48px;
+  }
+}

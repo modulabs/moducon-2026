@@ -1,0 +1,24 @@
+/* Keep FAQ sharing artwork consistent across all responsive variants. */
+body[data-route="/faq"] .faq-share-2026 {
+  background-color: #102136;
+}
+
+body[data-route="/faq"] .faq-share-2026 .framer-text {
+  --framer-text-color: #fff !important;
+  color: #fff;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 24%);
+}
+
+body[data-route="/faq"] .faq-share-2026 button {
+  background-color: #fff !important;
+  color: #102136 !important;
+}
+
+body[data-route="/faq"] .faq-share-2026 button:hover {
+  background-color: #e7faff !important;
+}
+
+body[data-route="/faq"] .faq-share-2026 button:focus-visible {
+  outline: 3px solid #76e9fa;
+  outline-offset: 4px;
+}

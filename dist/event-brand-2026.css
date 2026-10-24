@@ -1,0 +1,24 @@
+/* Current-event interface colors; partner logos and historical artwork keep their original colors. */
+body[data-event-year="2026"],
+body[data-event-year="2026"] [data-site-root] {
+  --token-409a47fb-df9c-45e1-a84f-f309680a3ddc: #17627a !important;
+}
+
+body[data-event-year="2026"] [style*="--framer-text-color:rgb(247, 88, 92)"],
+body[data-event-year="2026"] [style*="--framer-text-color:rgb(247,88,92)"] {
+  --framer-text-color: #17627a !important;
+  color: #17627a !important;
+}
+
+body[data-event-year="2026"] [data-framer-name="Primary"] {
+  background-color: #17627a !important;
+}
+
+body[data-event-year="2026"] [data-framer-name="Primary"]:hover {
+  background-color: #102136 !important;
+}
+
+body[data-event-year="2026"] [data-framer-name="Primary"] .framer-text {
+  --framer-text-color: #fff !important;
+  color: #fff !important;
+}
