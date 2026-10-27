@@ -14,6 +14,8 @@ const approvedSlugs = [
   "kim-min-hyun",
   "lee-yong-hwan",
   "lee-tae-kyung",
+  "kim-tae-su",
+  "jo-in-ryeong",
 ];
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -31,6 +33,8 @@ const portraitFrames = {
   "김민현": { imageWidth: 832, x: 188, y: 80, size: 476 },
   "이용환": { imageWidth: 370, x: 20, y: 10, size: 330 },
   "이태경": { imageWidth: 2048, x: 119, y: 57, size: 1812 },
+  "김태수": { imageWidth: 1086, x: 245, y: 250, size: 600 },
+  "조인령": { imageWidth: 716, x: -102, y: 0, size: 920, background: "#fcfcfc" },
 };
 const required = (value, message) => {
   if (!value) throw new Error(message);
@@ -83,7 +87,7 @@ function card(session, prefix, timeId) {
                   const frame = portrait?.frame;
                   const percent = (value) => `${Number(value.toFixed(3))}%`;
                   const framingClass = frame ? " timetable-speaker-avatar--framed" : "";
-                  const framingStyle = frame ? ` style="--portrait-width:${percent(frame.imageWidth / frame.size * 100)};--portrait-left:${percent(-frame.x / frame.size * 100)};--portrait-top:${percent(-frame.y / frame.size * 100)}"` : "";
+                  const framingStyle = frame ? ` style="--portrait-width:${percent(frame.imageWidth / frame.size * 100)};--portrait-left:${percent(-frame.x / frame.size * 100)};--portrait-top:${percent(-frame.y / frame.size * 100)}${frame.background ? `;background-color:${frame.background}` : ""}"` : "";
                   const image = portrait ? `<span class="timetable-speaker-avatar${framingClass}"${framingStyle} aria-hidden="true"><img src="${prefix}${portrait.asset}" alt="" loading="lazy" decoding="async"></span>` : "";
                   return `<p class="timetable-speaker">${image}<span class="timetable-speaker-text"><strong>${name}</strong> ${affiliations[index]}</span></p>`;
                 }).join("\n                ")}

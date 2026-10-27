@@ -349,5 +349,15 @@
     "path": "/session/2026/kim-do-hyuk",
     "file": "session/2026/kim-do-hyuk/index.html",
     "title": "Python & RPi5로 구현하는  엣지 AI 디바이스 생존기 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/kim-tae-su",
+    "file": "session/2026/kim-tae-su/index.html",
+    "title": "리벨리온 NPU로 LLM 서비스 시작하기: 하드웨어부터 vLLM 서빙까지 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/jo-in-ryeong",
+    "file": "session/2026/jo-in-ryeong/index.html",
+    "title": "Physical AI Odyssey: 체화된 지능이 현실에서 마주한 문제들 | MODUCON 2026"
   }
 ]
