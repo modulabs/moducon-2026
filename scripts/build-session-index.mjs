@@ -67,18 +67,30 @@ const sessions = approvedSlugs.map((slug) => {
   return { slug, title, track, room, names, affiliations, portraits, start: times[0][2], end: times[1][2], startDate: times[0][1], endDate: times[1][1] };
 }).sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end) || a.track.localeCompare(b.track));
 
-const groups = new Map();
-for (const session of sessions) {
-  const key = `${session.start}-${session.end}`;
-  if (!groups.has(key)) groups.set(key, []);
-  const row = groups.get(key);
-  required(!row.some((existing) => existing.track === session.track), `${key}: overlapping sessions in one track need review`);
-  row.push(session);
+const minutes = (value) => {
+  const [hours, minute] = value.split(":").map(Number);
+  return hours * 60 + minute;
+};
+for (const [index, session] of sessions.entries()) {
+  required(minutes(session.end) > minutes(session.start), `${session.slug}: invalid session duration`);
+  for (const other of sessions.slice(index + 1)) {
+    required(session.track !== other.track || session.end <= other.start || other.end <= session.start,
+      `${session.slug} and ${other.slug}: overlapping sessions in one track need review`);
+  }
 }
+// Both tracks share every start/end boundary. Longer talks span the same rows
+// as shorter simultaneous talks; empty intervals are visibly compressed.
+const boundaries = [...new Set(sessions.flatMap((session) => [session.start, session.end]))].sort();
+const segments = boundaries.slice(0, -1).map((start, index) => {
+  const end = boundaries[index + 1];
+  return { start, end, row: index + 1, duration: minutes(end) - minutes(start),
+    active: sessions.some((session) => session.start < end && start < session.end) };
+});
 
-function card(session, prefix, timeId) {
+function card(session, prefix) {
   const { slug, title, track, room, names, affiliations, portraits } = session;
-  return `<a class="timetable-card" href="${prefix}session/2026/${slug}/index.html" data-local-route="/session/2026/${slug}" data-session-slug="${slug}" aria-labelledby="${slug}-title ${slug}-speakers" aria-describedby="${timeId} ${slug}-track">
+  return `<a class="timetable-card" href="${prefix}session/2026/${slug}/index.html" data-local-route="/session/2026/${slug}" data-session-slug="${slug}" aria-labelledby="${slug}-title ${slug}-speakers" aria-describedby="${slug}-time ${slug}-track">
+              <p class="timetable-card-time" id="${slug}-time"><time datetime="${session.startDate}">${session.start}</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="${session.endDate}">${session.end}</time><span class="timetable-sr-only">까지, 한국 시간</span></p>
               <p class="timetable-card-track" id="${slug}-track">Track ${track} <span aria-hidden="true">·</span> ${room}</p>
               <h3 id="${slug}-title">${title}</h3>
               <div class="timetable-speakers" id="${slug}-speakers">
@@ -97,16 +109,15 @@ function card(session, prefix, timeId) {
 }
 
 function page(route, prefix) {
-  const rows = [...groups.entries()].map(([key, items]) => {
-    const first = items[0];
-    const timeId = `time-${key.replaceAll(":", "")}`;
-    return `        <div class="timetable-row" role="listitem">
-          <div class="timetable-time" id="${timeId}"><time datetime="${first.startDate}">${first.start}</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="${first.endDate}">${first.end}</time><span class="timetable-sr-only">까지</span></div>
-${tracks.map((track) => {
-      const session = items.find((item) => item.track === track);
-      return session ? `          <div class="timetable-cell" data-track="${track}">\n            ${card(session, prefix, timeId)}\n          </div>` : `          <div class="timetable-cell timetable-cell--empty" aria-hidden="true"></div>`;
-    }).join("\n")}
-        </div>`;
+  const rowSizes = segments.map((segment) => segment.active
+    ? `minmax(calc(var(--timetable-minute-height) * ${segment.duration}), ${segment.duration}fr)` : "32px").join(" ");
+  const timeLabels = segments.map((segment) => segment.active
+    ? `          <div class="timetable-time" data-start="${segment.start}" data-end="${segment.end}" style="grid-column:1;grid-row:${segment.row}" aria-hidden="true"><span>${segment.start}</span><span>–</span><span>${segment.end}</span></div>`
+    : `          <div class="timetable-gap" style="grid-column:1 / -1;grid-row:${segment.row}" aria-hidden="true"><span>⋮</span></div>`).join("\n");
+  const cards = sessions.map((session) => {
+    const startRow = boundaries.indexOf(session.start) + 1;
+    const endRow = boundaries.indexOf(session.end) + 1;
+    return `          <div class="timetable-cell" role="listitem" data-track="${session.track}" data-start="${session.start}" data-end="${session.end}" style="grid-column:${tracks.indexOf(session.track) + 2};grid-row:${startRow} / ${endRow}">\n            ${card(session, prefix)}\n          </div>`;
   }).join("\n");
   return `<!doctype html>
 <html lang="ko">
@@ -150,13 +161,16 @@ ${tracks.map((track) => {
     </header>
 
     <section class="timetable-section" aria-label="세션 시간표">
-      <div class="timetable-grid" role="list" aria-label="MODUCON 2026 시간별 세션, 한국 시간">
+      <div class="timetable-grid">
         <div class="timetable-columns" aria-hidden="true">
           <span>시간 <small>KST</small></span>
           <span>Track C <small>B147</small></span>
           <span>Track D <small>B146</small></span>
         </div>
-${rows}
+        <div class="timetable-timeline" role="list" aria-label="MODUCON 2026 시간별 세션, 한국 시간" style="grid-template-rows:${rowSizes}">
+${timeLabels}
+${cards}
+        </div>
       </div>
     </section>
 

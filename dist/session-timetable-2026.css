@@ -1,4 +1,4 @@
-/* The 2025 time-and-track layout, using the current event's navy/cyan artwork. */
+/* Shared time axis for the approved 2026 sessions across both tracks. */
 .session-2026.session-timetable {
   color: #1f1f1f;
 }
@@ -46,12 +46,16 @@
   margin-inline: auto;
 }
 
-.session-timetable .timetable-row,
+.session-timetable .timetable-timeline,
 .session-timetable .timetable-columns {
   display: grid;
   grid-template-columns: 180px repeat(2, minmax(0, 1fr));
-  align-items: start;
   gap: 10px;
+}
+
+.session-timetable .timetable-timeline {
+  --timetable-minute-height: 9px;
+  align-items: stretch;
 }
 
 .session-timetable .timetable-columns {
@@ -68,8 +72,23 @@
   font-weight: 500;
 }
 
-.session-timetable .timetable-row + .timetable-row {
-  margin-top: 10px;
+.session-timetable .timetable-gap {
+  display: flex;
+  align-items: center;
+  color: #89949b;
+  font-size: 18px;
+}
+
+.session-timetable .timetable-gap span {
+  width: 180px;
+  text-align: center;
+}
+
+.session-timetable .timetable-gap::after {
+  content: "";
+  flex: 1;
+  margin-left: 10px;
+  border-top: 1px dashed #dde4e8;
 }
 
 .session-timetable .timetable-time {
@@ -77,7 +96,7 @@
   justify-content: center;
   gap: 2px;
   min-width: 0;
-  padding-top: 11px;
+  padding-top: 16px;
   font-size: 16px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -85,13 +104,18 @@
 }
 
 .session-timetable .timetable-cell {
+  display: flex;
   min-width: 0;
+  min-height: 0;
 }
 
 .session-timetable .timetable-card {
   display: flex;
   flex-direction: column;
+  flex: 1;
   min-width: 0;
+  box-sizing: border-box;
+  height: 100%;
   padding: 16px 18px 10px;
   background: #f5f5f5;
   border-radius: 10px;
@@ -107,6 +131,16 @@
   color: #727272;
   font-size: 11px;
   line-height: 1.5;
+}
+
+.session-timetable .timetable-card-time {
+  display: flex;
+  gap: 3px;
+  margin: 0 0 6px;
+  color: #102136;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
 }
 
 .session-timetable .timetable-card h3 {
@@ -172,7 +206,8 @@
 
 .session-timetable .timetable-card-plus {
   align-self: flex-end;
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 10px;
   color: #828282;
   font-size: 17px;
   font-weight: 700;
@@ -214,24 +249,26 @@
   }
 
   .session-timetable .timetable-columns,
-  .session-timetable .timetable-cell--empty {
+  .session-timetable .timetable-time,
+  .session-timetable .timetable-gap {
     display: none;
   }
 
-  .session-timetable .timetable-row {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
+  .session-timetable .timetable-timeline {
+    display: block;
   }
 
-  .session-timetable .timetable-row + .timetable-row {
+  .session-timetable .timetable-cell {
+    grid-row: auto !important;
+    grid-column: auto !important;
+  }
+
+  .session-timetable .timetable-cell + .timetable-cell {
     margin-top: 20px;
   }
 
-  .session-timetable .timetable-time {
-    padding: 8px 0 2px;
-  }
-
   .session-timetable .timetable-card {
+    height: auto;
     padding: 16px 18px 12px;
   }
 
