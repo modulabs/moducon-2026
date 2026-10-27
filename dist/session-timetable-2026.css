@@ -109,6 +109,45 @@
   min-height: 0;
 }
 
+.session-timetable .timetable-time--intermission {
+  align-items: center;
+  padding-top: 0;
+}
+
+.session-timetable .timetable-intermission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  min-width: 0;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  border: 1px solid #dce6ec;
+  border-radius: 10px;
+  color: #425566;
+  background: #edf3f6;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.session-timetable .timetable-intermission[data-kind="lunch"] {
+  color: #fff;
+  background: #15384c;
+  border-color: #22495d;
+  font-size: 18px;
+}
+
+.session-timetable .timetable-intermission-time {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .session-timetable .timetable-card {
   display: flex;
   flex-direction: column;
@@ -258,13 +297,22 @@
     display: block;
   }
 
-  .session-timetable .timetable-cell {
+  .session-timetable .timetable-cell,
+  .session-timetable .timetable-intermission {
     grid-row: auto !important;
     grid-column: auto !important;
   }
 
-  .session-timetable .timetable-cell + .timetable-cell {
+  .session-timetable .timetable-timeline > [role="listitem"] + [role="listitem"] {
     margin-top: 20px;
+  }
+
+  .session-timetable .timetable-intermission {
+    min-height: 64px;
+  }
+
+  .session-timetable .timetable-intermission[data-kind="lunch"] {
+    min-height: 84px;
   }
 
   .session-timetable .timetable-card {

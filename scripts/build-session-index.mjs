@@ -78,13 +78,27 @@ for (const [index, session] of sessions.entries()) {
       `${session.slug} and ${other.slug}: overlapping sessions in one track need review`);
   }
 }
-// Both tracks share every start/end boundary. Longer talks span the same rows
-// as shorter simultaneous talks; empty intervals are visibly compressed.
-const boundaries = [...new Set(sessions.flatMap((session) => [session.start, session.end]))].sort();
+// These shared breaks were confirmed by the organizer. Do not infer breaks
+// from other gaps: unpublished sessions can also leave empty space.
+const intermissions = [
+  { start: "11:50", end: "12:05", kind: "break", label: "쉬는 시간" },
+  { start: "12:45", end: "13:45", kind: "lunch", label: "점심시간" },
+  { start: "14:25", end: "14:40", kind: "break", label: "쉬는 시간" },
+  { start: "15:20", end: "15:35", kind: "break", label: "쉬는 시간" },
+];
+for (const pause of intermissions) {
+  required(!sessions.some((session) => session.start < pause.end && pause.start < session.end),
+    `${pause.start}–${pause.end}: a published session conflicts with a confirmed break`);
+}
+// Share every start/end boundary, including the confirmed breaks. Preserve
+// chronological DOM order so the same breaks remain between cards on mobile.
+const entries = [...sessions, ...intermissions].sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end));
+const boundaries = [...new Set(entries.flatMap((entry) => [entry.start, entry.end]))].sort();
 const segments = boundaries.slice(0, -1).map((start, index) => {
   const end = boundaries[index + 1];
   return { start, end, row: index + 1, duration: minutes(end) - minutes(start),
-    active: sessions.some((session) => session.start < end && start < session.end) };
+    active: sessions.some((session) => session.start < end && start < session.end),
+    pause: intermissions.find((pause) => pause.start <= start && end <= pause.end) };
 });
 
 function card(session, prefix) {
@@ -110,13 +124,20 @@ function card(session, prefix) {
 
 function page(route, prefix) {
   const rowSizes = segments.map((segment) => segment.active
-    ? `minmax(calc(var(--timetable-minute-height) * ${segment.duration}), ${segment.duration}fr)` : "32px").join(" ");
-  const timeLabels = segments.map((segment) => segment.active
-    ? `          <div class="timetable-time" data-start="${segment.start}" data-end="${segment.end}" style="grid-column:1;grid-row:${segment.row}" aria-hidden="true"><span>${segment.start}</span><span>–</span><span>${segment.end}</span></div>`
+    ? `minmax(calc(var(--timetable-minute-height) * ${segment.duration}), ${segment.duration}fr)`
+    : segment.pause ? (segment.pause.kind === "lunch" ? "minmax(84px, auto)" : "minmax(64px, auto)") : "32px").join(" ");
+  const timeLabels = segments.map((segment) => segment.active || segment.pause
+    ? `          <div class="timetable-time${segment.pause ? " timetable-time--intermission" : ""}" data-start="${segment.start}" data-end="${segment.end}" style="grid-column:1;grid-row:${segment.row}" aria-hidden="true"><span>${segment.start}</span><span>–</span><span>${segment.end}</span></div>`
     : `          <div class="timetable-gap" style="grid-column:1 / -1;grid-row:${segment.row}" aria-hidden="true"><span>⋮</span></div>`).join("\n");
-  const cards = sessions.map((session) => {
+  const cards = entries.map((session) => {
     const startRow = boundaries.indexOf(session.start) + 1;
     const endRow = boundaries.indexOf(session.end) + 1;
+    if (session.kind) {
+      return `          <div class="timetable-intermission" role="listitem" data-kind="${session.kind}" data-start="${session.start}" data-end="${session.end}" style="grid-column:2 / -1;grid-row:${startRow} / ${endRow}">
+            <strong>${session.label}</strong>
+            <span class="timetable-intermission-time"><time datetime="2026-12-12T${session.start}:00+09:00">${session.start}</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="2026-12-12T${session.end}:00+09:00">${session.end}</time><span class="timetable-sr-only">까지, 한국 시간</span></span>
+          </div>`;
+    }
     return `          <div class="timetable-cell" role="listitem" data-track="${session.track}" data-start="${session.start}" data-end="${session.end}" style="grid-column:${tracks.indexOf(session.track) + 2};grid-row:${startRow} / ${endRow}">\n            ${card(session, prefix)}\n          </div>`;
   }).join("\n");
   return `<!doctype html>
