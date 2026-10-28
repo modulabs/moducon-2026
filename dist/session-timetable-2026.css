@@ -1,4 +1,4 @@
-/* Shared time axis for the approved 2026 sessions across both tracks. */
+/* Shared time axis for the approved 2026 sessions across Tracks C, D and E. */
 .session-2026.session-timetable {
   color: #1f1f1f;
 }
@@ -49,7 +49,7 @@
 .session-timetable .timetable-timeline,
 .session-timetable .timetable-columns {
   display: grid;
-  grid-template-columns: 180px repeat(2, minmax(0, 1fr));
+  grid-template-columns: 150px repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .session-timetable .timetable-gap span {
-  width: 180px;
+  width: 150px;
   text-align: center;
 }
 
@@ -263,7 +263,7 @@
   white-space: nowrap;
 }
 
-@media (max-width: 809px) {
+@media (max-width: 1023px) {
   .session-timetable .timetable-speaker-avatar {
     flex-basis: 40px;
     width: 40px;

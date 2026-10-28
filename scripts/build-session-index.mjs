@@ -16,12 +16,19 @@ const approvedSlugs = [
   "lee-tae-kyung",
   "kim-tae-su",
   "jo-in-ryeong",
+  "park-jong-se",
+  "song-kyung-min",
+  "jung-hoon-gu",
+  "sasha-seo",
+  "kim-yu-jin",
+  "jung-won-guk",
+  "kim-hyung-jin",
 ];
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
-const tracks = ["C", "D"];
-const rooms = { C: "B147", D: "B146" };
+const tracks = ["C", "D", "E"];
+const rooms = { C: "B147", D: "B146", E: "컨퍼런스홀 A" };
 // Reviewed square framing, in original image pixels. Only the listing uses it.
 // Keep the head visible at a similar size; never alter the original/detail photo.
 const portraitFrames = {
@@ -36,6 +43,10 @@ const portraitFrames = {
   "이태경": { imageWidth: 2048, x: 119, y: 57, size: 1812 },
   "김태수": { imageWidth: 1086, x: 245, y: 250, size: 600 },
   "조인령": { imageWidth: 716, x: -102, y: 0, size: 920, background: "#fcfcfc" },
+  "송경민": { imageWidth: 951, x: 365, y: 150, size: 300 },
+  "김유진": { imageWidth: 4000, x: -150, y: 0, size: 4300, background: "#edf2f5" },
+  "정원국": { imageWidth: 736, x: 249, y: 70, size: 124 },
+  "박종세": { imageWidth: 2731, x: 65, y: 70, size: 2600 },
 };
 const required = (value, message) => {
   if (!value) throw new Error(message);
@@ -47,7 +58,7 @@ const sessions = approvedSlugs.map((slug) => {
   const html = readFileSync(detailPath, "utf8");
   const title = capture(html, /<h1[^>]*>([\s\S]*?)<\/h1>/, `${slug}: title`);
   const track = capture(html, /class="session-track">Track ([A-Z])<\/span>/, `${slug}: track`);
-  const room = capture(html, /<dt>장소<\/dt>\s*<dd>이화여대 ECC · (B\d+)<\/dd>/, `${slug}: room`);
+  const room = capture(html, /<dt>장소<\/dt>\s*<dd>이화여대 ECC · (B\d+|컨퍼런스홀 A)<\/dd>/, `${slug}: room`);
   const times = [...html.matchAll(/<time datetime="(2026-12-12T(\d{2}:\d{2}):00\+09:00)">([^<]+)<\/time>/g)];
   required(times.length === 2, `${slug}: expected exactly one start/end time pair`);
   required(tracks.includes(track) && rooms[track] === room, `${slug}: review the approved track columns`);
@@ -186,8 +197,7 @@ function page(route, prefix) {
       <div class="timetable-grid">
         <div class="timetable-columns" aria-hidden="true">
           <span>시간 <small>KST</small></span>
-          <span>Track C <small>B147</small></span>
-          <span>Track D <small>B146</small></span>
+${tracks.map((track) => `          <span>Track ${track} <small>${rooms[track]}</small></span>`).join("\n")}
         </div>
         <div class="timetable-timeline" role="list" aria-label="MODUCON 2026 시간별 세션, 한국 시간" style="grid-template-rows:${rowSizes}">
 ${timeLabels}
