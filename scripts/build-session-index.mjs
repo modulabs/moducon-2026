@@ -29,6 +29,7 @@ const portraitFrames = {
   "백종원": { imageWidth: 1080, x: 0, y: 60, size: 1080 },
   "신지현": { imageWidth: 4000, x: 1000, y: 500, size: 2100 },
   "조현욱": { imageWidth: 413, x: 20, y: 0, size: 380 },
+  "김도혁": { imageWidth: 992, x: 170, y: 0, size: 720 },
   "신태욱": { imageWidth: 432, x: 10, y: 5, size: 420 },
   "김민현": { imageWidth: 832, x: 188, y: 80, size: 476 },
   "이용환": { imageWidth: 370, x: 20, y: 10, size: 330 },
