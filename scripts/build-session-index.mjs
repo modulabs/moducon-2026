@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 // Add a slug only after the user approves publication of its detail page.
 const approvedSlugs = [
   "dao-lab-together",
+  "song-mu-bok-park-jun",
   "jo-hyun-wook",
   "kim-do-hyuk",
   "shin-tae-uk",
@@ -32,6 +33,8 @@ const rooms = { C: "B147", D: "B146", E: "컨퍼런스홀 A" };
 // Reviewed square framing, in original image pixels. Only the listing uses it.
 // Keep the head visible at a similar size; never alter the original/detail photo.
 const portraitFrames = {
+  "송무복": { imageWidth: 1920, x: 650, y: 50, size: 700 },
+  "박준": { imageWidth: 1080, x: 555, y: 440, size: 470 },
   "정훈구": { imageWidth: 1376, x: 410, y: 230, size: 760 },
   "김형진": { imageWidth: 687, x: 150, y: 70, size: 350 },
   "한재선": { imageWidth: 5304, x: 945, y: 780, size: 3500 },

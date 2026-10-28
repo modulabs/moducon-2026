@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="송무복·박준 공동연사의 MODUCON 2026 발표: 모델에서 실리콘까지: PyTorch 코드 뒤의 ML 컴파일러와 GPU 커널. 12월 12일 15:35–16:15, Track D · B146.">
+  <title>모델에서 실리콘까지: PyTorch 코드 뒤의 ML 컴파일러와 GPU 커널 | MODUCON 2026</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/brand-2026/favicon-2026-32.png">
+<link rel="icon" type="image/svg+xml" sizes="any" href="../../../assets/brand-2026/favicon-2026.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/brand-2026/apple-touch-icon-2026.png">
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="stylesheet" href="../../../home-sections.css">
+  <link rel="stylesheet" href="../../../session-2026.css">
+  <link rel="stylesheet" href="../../../speaker-photo.css">
+  <link rel="stylesheet" href="../../../speaker-groups.css">
+  <script src="../../../app.js" defer></script>
+</head>
+<body class="session-2026" data-route="/session/2026/song-mu-bok-park-jun" data-event-year="2026" data-session-visibility="hidden">
+  <a class="skip-link" href="#main">본문으로 바로 가기</a>
+  <header class="session-header">
+    <nav class="session-shell session-navigation" aria-label="주 메뉴">
+      <a class="session-logo" href="../../../index.html" data-local-route="/" aria-label="MODUCON 2026 홈">
+        <img src="../../../assets/moducon26_logo_white.png" width="1330" height="436" alt="MODUCON 2026">
+      </a>
+      <ul>
+        <li><a href="../../../index.html" data-local-route="/">Home</a></li>
+        <li data-session-navigation><a href="../index.html" data-local-route="/session/2026" aria-current="location">전체 세션</a></li>
+        <li><a href="../../../faq/index.html" data-local-route="/faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <article>
+      <header class="session-heading">
+        <div class="session-shell">
+          <a class="session-back" href="../index.html" data-local-route="/session/2026" data-session-navigation><span aria-hidden="true">←</span> 전체 세션</a>
+          <p class="session-eyebrow">MODUCON 2026 · <span class="session-track">Track D</span></p>
+          <h1>모델에서 실리콘까지: PyTorch 코드 뒤의 ML 컴파일러와 GPU 커널</h1>
+          <dl class="session-meta">
+            <div><dt>날짜</dt><dd><time datetime="2026-12-12">2026년 12월 12일(토)</time></dd></div>
+            <div><dt>시간</dt><dd><time datetime="2026-12-12T15:35:00+09:00">15:35</time>–<time datetime="2026-12-12T16:15:00+09:00">16:15</time> (KST)</dd></div>
+            <div><dt>장소</dt><dd>이화여대 ECC · B146</dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <div class="session-shell session-content">
+        <section class="session-section" aria-labelledby="session-introduction">
+          <h2 id="session-introduction">발표 소개</h2>
+          <div>
+            <div class="session-prose"><p>PyTorch로 작성한 텐서 연산은 어떤 과정을 거쳐 GPU에서 실행될까요? 모두의연구소 Tensor2Silicon Lab에서 함께 탐구한 내용을 바탕으로, 연산 그래프와 중간 표현(IR), ML 컴파일러, 런타임, GPU 커널로 이어지는 실행 흐름을 살펴봅니다. ‘같은 연산인데 왜 실행 속도가 다를까?’라는 질문에서 출발해, Roofline 모델로 연산과 메모리 병목을 이해하고 Tiling과 커널 결합이 데이터 이동을 줄이는 원리를 알아봅니다. Vector Add와 Softmax의 Triton 예제로 개념을 코드와 연결하며, AI 모델에는 익숙하지만 컴파일러와 하드웨어는 낯선 개발자에게 모델 실행과 성능을 이해하는 첫걸음을 제시합니다.</p></div>
+            <ul class="session-keywords" aria-label="키워드"><li>ML컴파일러</li><li>PyTorch</li><li>Triton</li><li>GPU커널</li><li>AI가속기</li><li>Roofline</li><li>Tiling</li><li>Tensor2Silicon</li></ul>
+          </div>
+        </section>
+
+        <section class="session-section" aria-labelledby="speaker-introduction">
+<h2 id="speaker-introduction">공동연사 소개</h2>
+<div class="session-speaker-group">
+<div class="session-speaker-profile">
+            <figure class="session-speaker-portrait"><img src="../../../assets/speakers-2026/song-mu-bok.jpg" width="1920" height="1080" alt="송무복 연사" decoding="async"></figure>
+            <div class="session-speaker-biography">
+              <p class="session-speaker-name">송무복</p>
+              <p class="session-speaker-affiliation">모두의연구소 tensor2silicon LAB 랩원</p>
+              <div class="session-prose"><p>1인 독립 개발자이며 Hugging Face 커뮤니티에서 활동하고 있습니다. LLM 알고리즘부터 하드웨어까지 지식을 알리고 공유하는 활동을 하고 있습니다.</p></div>
+            </div>
+          </div>
+        
+<div class="session-speaker-profile">
+            <figure class="session-speaker-portrait"><img src="../../../assets/speakers-2026/park-jun.jpg" width="1080" height="1440" alt="박준 연사" decoding="async"></figure>
+            <div class="session-speaker-biography">
+              <p class="session-speaker-name">박준</p>
+              <p class="session-speaker-affiliation">주식회사 문리버 / CTO</p>
+              <div class="session-prose"><p>주식회사 문리버 CTO. ‘PyTorch 코드 한 줄이 GPU에서 실제로 어떻게 돌아갈까&#x27;가 궁금해 모두의연구소 Tensor2Silicon Lab에서 ML 컴파일러와 GPU 커널을 함께 공부하고 있다. Triton으로 matmul과 FlashAttention을 직접 구현해보며 알게 된 것들을 블로그(currybab.bearblog.dev)에 꾸준히 기록 중이다.</p></div>
+            </div>
+          </div>
+        
+</div>
+</section>
+
+        <div class="session-actions">
+          <a class="session-button session-button--primary" href="../index.html" data-local-route="/session/2026" data-session-navigation>전체 세션 보기</a>
+          <button class="session-button" type="button">공유하기</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="session-footer">
+    <div class="session-shell session-footer-content">
+      <a class="session-logo" href="../../../index.html" data-local-route="/" aria-label="MODUCON 2026 홈">
+        <img src="../../../assets/moducon26_logo_black.png" width="1330" height="436" alt="MODUCON 2026" loading="lazy">
+      </a>
+      <small>© 2026 – MODULABS</small>
+    </div>
+  </footer>
+</body>
+</html>

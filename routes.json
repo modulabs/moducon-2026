@@ -394,5 +394,10 @@
     "path": "/session/2026/kim-hyung-jin",
     "file": "session/2026/kim-hyung-jin/index.html",
     "title": "생성형 AI 시대, '본인'을 증명한다는 것의 의미 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/song-mu-bok-park-jun",
+    "file": "session/2026/song-mu-bok-park-jun/index.html",
+    "title": "모델에서 실리콘까지: PyTorch 코드 뒤의 ML 컴파일러와 GPU 커널 | MODUCON 2026"
   }
 ]
