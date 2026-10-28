@@ -32,6 +32,8 @@ const rooms = { C: "B147", D: "B146", E: "컨퍼런스홀 A" };
 // Reviewed square framing, in original image pixels. Only the listing uses it.
 // Keep the head visible at a similar size; never alter the original/detail photo.
 const portraitFrames = {
+  "정훈구": { imageWidth: 1376, x: 410, y: 230, size: 760 },
+  "김형진": { imageWidth: 687, x: 150, y: 70, size: 350 },
   "한재선": { imageWidth: 5304, x: 945, y: 780, size: 3500 },
   "백종원": { imageWidth: 1080, x: 0, y: 60, size: 1080 },
   "신지현": { imageWidth: 4000, x: 1000, y: 500, size: 2100 },
