@@ -36,12 +36,11 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
 const tracks = ["A", "B", "C", "D", "E"];
 const rooms = { A: "이삼봉홀", B: "컨퍼런스홀 B", C: "B147", D: "B146", E: "컨퍼런스홀 A" };
-// Shared opening program, verified against the master timetable on 2026-10-30.
+// Shared opening program, combined with organizer-approved wording on 2026-10-30.
 // Opening/remarks have no detail page. The keynote detail awaits supplied
 // title, description and portrait; do not link to an unfinished page.
 const commonProgram = [
-  { id: "opening", start: "10:00", end: "10:10", title: "오프닝", speaker: "이영빈" },
-  { id: "remarks", start: "10:10", end: "10:20", title: "축사", speaker: "노태영 산학협력단장", affiliation: "이화여대 창업지원단" },
+  { id: "opening", start: "10:00", end: "10:20", title: "오프닝 및 축사", speakers: ["모두의연구소 하이테크플랫폼팀 팀장 이영빈", "노태영 이화여자대학교 창업지원단 산학협력단장"] },
   { id: "keynote", start: "10:20", end: "10:50", title: "메인 키노트", speaker: "김덕진 소장", label: "KEYNOTE" },
   { id: "transition", start: "10:50", end: "11:10", title: "쉬는 시간 및 이동" },
 ];
@@ -167,7 +166,7 @@ function page(route, prefix) {
             <div class="common-program-content">
               ${item.label ? `<p class="common-program-label">${item.label}</p>` : ""}
               <h3 id="${item.id}-title">${item.title}</h3>
-              ${item.speaker ? `<p class="common-program-speaker"><strong>${item.speaker}</strong>${item.affiliation ? `<span>${item.affiliation}</span>` : ""}</p>` : ""}
+              ${item.speakers ? item.speakers.map((speaker) => `<p class="common-program-speaker"><strong>${speaker}</strong></p>`).join("\n              ") : item.speaker ? `<p class="common-program-speaker"><strong>${item.speaker}</strong>${item.affiliation ? `<span>${item.affiliation}</span>` : ""}</p>` : ""}
             </div>
           </article>`).join("\n").replace(/^ +$/gm, "");
   const rowSizes = segments.map((segment) => segment.active
