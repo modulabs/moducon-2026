@@ -180,8 +180,10 @@ function page(route, prefix) {
               ${item.speakers ? item.speakers.map((speaker) => `<p class="common-program-speaker"><strong>${speaker}</strong></p>`).join("\n              ") : item.speaker ? `<p class="common-program-speaker"><strong>${item.speaker}</strong>${item.affiliation ? `<span>${item.affiliation}</span>` : ""}</p>` : ""}
             </div>
           </article>`).join("\n").replace(/^ +$/gm, "");
+  // Size each shared time row to its own content; fractional rows amplify one
+  // long, short-duration card into excessive whitespace across the whole day.
   const rowSizes = segments.map((segment) => segment.active
-    ? `minmax(calc(var(--timetable-minute-height) * ${segment.duration}), ${segment.duration}fr)`
+    ? `minmax(calc(var(--timetable-minute-height) * ${segment.duration}), auto)`
     : segment.pause ? (segment.pause.kind === "lunch" ? "minmax(84px, auto)" : "minmax(64px, auto)") : "32px").join(" ");
   const timeLabels = segments.map((segment) => segment.active || segment.pause
     ? `          <div class="timetable-time${segment.pause ? " timetable-time--intermission" : ""}" data-start="${segment.start}" data-end="${segment.end}" style="grid-column:1;grid-row:${segment.row}" aria-hidden="true"><span>${segment.start}</span><span>–</span><span>${segment.end}</span></div>`

@@ -6,8 +6,8 @@
 .session-timetable .timetable-hero {
   display: flex;
   align-items: center;
-  min-height: 350px;
-  padding: 48px 0;
+  min-height: 240px;
+  padding: 32px 0;
   color: #fff;
   text-align: center;
   background: linear-gradient(rgb(16 33 54 / 18%), rgb(16 33 54 / 18%)), url("assets/moducon26-hero-background.png") center / cover;
@@ -38,7 +38,7 @@
 }
 
 .session-timetable .timetable-section {
-  padding: 60px 0 20px;
+  padding: 36px 0 20px;
 }
 
 .session-timetable .timetable-grid {
@@ -47,11 +47,11 @@
 }
 
 .session-timetable .common-program-section {
-  padding-top: 60px;
+  padding-top: 36px;
 }
 
 .session-timetable .timetable-section-title {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   color: #102136;
   font-size: 26px;
   font-weight: 700;
@@ -61,7 +61,7 @@
 
 .session-timetable .common-program {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .session-timetable .common-program-item {
@@ -69,7 +69,7 @@
   grid-template-columns: 150px minmax(0, 1fr);
   align-items: center;
   gap: 10px;
-  padding: 22px 28px 22px 0;
+  padding: 16px 24px 16px 0;
   border: 1px solid #e1e8ed;
   border-radius: 12px;
   background: #f6f8fa;
@@ -111,7 +111,7 @@
 .session-timetable .common-program-speaker strong { font-weight: 500; }
 
 .session-timetable .common-program-item--keynote {
-  padding-block: 30px;
+  padding-block: 20px;
   color: #fff;
   background: #15384c;
   border-color: #22495d;
@@ -148,7 +148,7 @@
 }
 
 .session-timetable .timetable-timeline {
-  --timetable-minute-height: 9px;
+  --timetable-minute-height: 6px;
   align-items: stretch;
 }
 
@@ -257,7 +257,7 @@
   min-width: 0;
   box-sizing: border-box;
   height: 100%;
-  padding: 16px 18px 10px;
+  padding: 14px 16px 10px;
   background: #f5f5f5;
   border-radius: 10px;
   transition: background-color .2s ease;
@@ -268,7 +268,7 @@
 }
 
 .session-timetable .timetable-card-track {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   color: #727272;
   font-size: 11px;
   line-height: 1.5;
@@ -286,7 +286,7 @@
 
 .session-timetable .timetable-card h3 {
   margin: 0;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: -.02em;
@@ -373,8 +373,8 @@
   }
 
   .session-timetable .timetable-hero {
-    min-height: 300px;
-    padding: 40px 0;
+    min-height: 220px;
+    padding: 28px 0;
   }
 
   .session-2026.session-timetable .timetable-hero h1 {
@@ -382,7 +382,7 @@
   }
 
   .session-timetable .timetable-section {
-    padding-top: 40px;
+    padding-top: 32px;
   }
 
   .session-timetable .timetable-grid {
@@ -406,7 +406,7 @@
   }
 
   .session-timetable .timetable-timeline > [role="listitem"] + [role="listitem"] {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   .session-timetable .timetable-intermission {
@@ -419,21 +419,21 @@
 
   .session-timetable .timetable-card {
     height: auto;
-    padding: 16px 18px 12px;
+    padding: 14px 16px 12px;
   }
 
 }
 
 @media (max-width: 479px) {
-  .session-timetable .common-program-section { padding-top: 40px; }
+  .session-timetable .common-program-section { padding-top: 32px; }
   .session-timetable .timetable-section-title { font-size: 23px; }
   .session-timetable .common-program-item {
     grid-template-columns: minmax(0, 1fr);
-    gap: 12px;
-    padding: 20px;
+    gap: 10px;
+    padding: 16px;
   }
   .session-timetable .common-program-time { justify-content: flex-start; font-size: 15px; }
-  .session-timetable .common-program-item--keynote { padding-block: 26px; }
+  .session-timetable .common-program-item--keynote { padding-block: 20px; }
   .session-timetable .common-program-item--keynote h3 { font-size: 24px; }
   .session-2026.session-timetable .timetable-hero h1 {
     font-size: 36px;
