@@ -35,6 +35,14 @@ const approvedSlugs = [
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
 const tracks = ["A", "B", "C", "D", "E"];
+const trackLabels = {
+  A: "카카오 일상 AI Trend",
+  B: "AI in Work",
+  C: "LAB Showcase",
+  D: "AI for Science & NPU",
+  E: "AI in Startup : EWHA",
+};
+const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const rooms = { A: "이삼봉홀", B: "컨퍼런스홀 B", C: "B147", D: "B146", E: "컨퍼런스홀 A" };
 // Shared opening program, combined with organizer-approved wording on 2026-10-30.
 // Opening/remarks have no detail page. The keynote detail awaits supplied
@@ -82,7 +90,8 @@ const sessions = approvedSlugs.map((slug) => {
   const detailPath = join(dist, "session", "2026", slug, "index.html");
   const html = readFileSync(detailPath, "utf8");
   const title = capture(html, /<h1[^>]*>([\s\S]*?)<\/h1>/, `${slug}: title`);
-  const track = capture(html, /class="session-track">Track ([A-Z])<\/span>/, `${slug}: track`);
+  const trackTag = capture(html, /(<span\b[^>]*class="[^"]*\bsession-track\b[^"]*"[^>]*>[\s\S]*?<\/span>)/, `${slug}: track label`);
+  const track = required(trackTag.match(/\bdata-track="([A-E])"/)?.[1] || trackTag.match(/>Track ([A-E])<\/span>/)?.[1], `${slug}: missing canonical track`);
   const room = capture(html, /<dt>장소<\/dt>\s*<dd>이화여대 ECC · (B\d+|컨퍼런스홀 [AB]|이삼봉홀)<\/dd>/, `${slug}: room`);
   const times = [...html.matchAll(/<time datetime="(2026-12-12T(\d{2}:\d{2}):00\+09:00)">([^<]+)<\/time>/g)];
   required(times.length === 2, `${slug}: expected exactly one start/end time pair`);
@@ -144,7 +153,7 @@ function card(session, prefix) {
   const { slug, title, track, room, names, affiliations, portraits } = session;
   return `<a class="timetable-card" href="${prefix}session/2026/${slug}/index.html" data-local-route="/session/2026/${slug}" data-session-slug="${slug}" aria-labelledby="${slug}-title ${slug}-speakers" aria-describedby="${slug}-time ${slug}-track">
               <p class="timetable-card-time" id="${slug}-time"><time datetime="${session.startDate}">${session.start}</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="${session.endDate}">${session.end}</time><span class="timetable-sr-only">까지, 한국 시간</span></p>
-              <p class="timetable-card-track" id="${slug}-track">Track ${track} <span aria-hidden="true">·</span> ${room}</p>
+              <p class="timetable-card-track" id="${slug}-track">${escapeHtml(trackLabels[track])} <span aria-hidden="true">·</span> ${room}</p>
               <h3 id="${slug}-title">${title}</h3>
               <div class="timetable-speakers" id="${slug}-speakers">
                 ${names.map((name, index) => {
@@ -243,7 +252,7 @@ ${openingProgram}
         <h2 class="timetable-section-title" id="track-timetable-title">트랙별 시간표</h2>
         <div class="timetable-columns" aria-hidden="true">
           <span>시간 <small>KST</small></span>
-${tracks.map((track) => `          <span>Track ${track} <small>${rooms[track]}</small></span>`).join("\n")}
+${tracks.map((track) => `          <span data-track="${track}">${escapeHtml(trackLabels[track])} <small>${rooms[track]}</small></span>`).join("\n")}
         </div>
         <div class="timetable-timeline" role="list" aria-label="MODUCON 2026 시간별 세션, 한국 시간" style="grid-template-rows:${rowSizes}">
 ${timeLabels}

@@ -157,10 +157,18 @@
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.5;
+}
+
+.session-timetable .timetable-columns > span[data-track] {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
 }
 
 .session-timetable .timetable-columns small {
-  margin-left: 6px;
+  display: block;
+  margin-top: 4px;
   color: #777;
   font-size: 12px;
   font-weight: 500;
