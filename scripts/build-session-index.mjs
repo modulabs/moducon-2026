@@ -36,6 +36,15 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
 const tracks = ["A", "B", "C", "D", "E"];
 const rooms = { A: "이삼봉홀", B: "컨퍼런스홀 B", C: "B147", D: "B146", E: "컨퍼런스홀 A" };
+// Shared opening program, verified against the master timetable on 2026-10-30.
+// Opening/remarks have no detail page. The keynote detail awaits supplied
+// title, description and portrait; do not link to an unfinished page.
+const commonProgram = [
+  { id: "opening", start: "10:00", end: "10:10", title: "오프닝", speaker: "이영빈" },
+  { id: "remarks", start: "10:10", end: "10:20", title: "축사", speaker: "노태영 산학협력단장", affiliation: "이화여대 창업지원단" },
+  { id: "keynote", start: "10:20", end: "10:50", title: "메인 키노트", speaker: "김덕진 소장", label: "KEYNOTE" },
+  { id: "transition", start: "10:50", end: "11:10", title: "쉬는 시간 및 이동" },
+];
 // Reviewed square framing, in original image pixels. Only the listing uses it.
 // Keep the head visible at a similar size; never alter the original/detail photo.
 const portraitFrames = {
@@ -152,6 +161,15 @@ function card(session, prefix) {
 }
 
 function page(route, prefix) {
+  const openingProgram = commonProgram.map((item) => `
+          <article class="common-program-item common-program-item--${item.id}" data-program-id="${item.id}" aria-labelledby="${item.id}-title">
+            <p class="common-program-time"><time datetime="2026-12-12T${item.start}:00+09:00">${item.start}</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="2026-12-12T${item.end}:00+09:00">${item.end}</time><span class="timetable-sr-only">까지, 한국 시간</span></p>
+            <div class="common-program-content">
+              ${item.label ? `<p class="common-program-label">${item.label}</p>` : ""}
+              <h3 id="${item.id}-title">${item.title}</h3>
+              ${item.speaker ? `<p class="common-program-speaker"><strong>${item.speaker}</strong>${item.affiliation ? `<span>${item.affiliation}</span>` : ""}</p>` : ""}
+            </div>
+          </article>`).join("\n").replace(/^ +$/gm, "");
   const rowSizes = segments.map((segment) => segment.active
     ? `minmax(calc(var(--timetable-minute-height) * ${segment.duration}), ${segment.duration}fr)`
     : segment.pause ? (segment.pause.kind === "lunch" ? "minmax(84px, auto)" : "minmax(64px, auto)") : "32px").join(" ");
@@ -210,8 +228,18 @@ function page(route, prefix) {
       </div>
     </header>
 
-    <section class="timetable-section" aria-label="세션 시간표">
+    <section class="common-program-section" aria-labelledby="common-program-title">
       <div class="timetable-grid">
+        <h2 class="timetable-section-title" id="common-program-title">오프닝 · 키노트</h2>
+        <div class="common-program">
+${openingProgram}
+        </div>
+      </div>
+    </section>
+
+    <section class="timetable-section" aria-labelledby="track-timetable-title">
+      <div class="timetable-grid">
+        <h2 class="timetable-section-title" id="track-timetable-title">트랙별 시간표</h2>
         <div class="timetable-columns" aria-hidden="true">
           <span>시간 <small>KST</small></span>
 ${tracks.map((track) => `          <span>Track ${track} <small>${rooms[track]}</small></span>`).join("\n")}

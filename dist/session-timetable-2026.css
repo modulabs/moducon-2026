@@ -46,6 +46,100 @@
   margin-inline: auto;
 }
 
+.session-timetable .common-program-section {
+  padding-top: 60px;
+}
+
+.session-timetable .timetable-section-title {
+  margin: 0 0 24px;
+  color: #102136;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -.025em;
+}
+
+.session-timetable .common-program {
+  display: grid;
+  gap: 12px;
+}
+
+.session-timetable .common-program-item {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 22px 28px 22px 0;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  background: #f6f8fa;
+}
+
+.session-timetable .common-program-time {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin: 0;
+  color: #102136;
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.session-timetable .common-program-content {
+  min-width: 0;
+}
+
+.session-timetable .common-program-content h3 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.session-timetable .common-program-speaker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 8px 0 0;
+  color: #506172;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.session-timetable .common-program-speaker strong { font-weight: 500; }
+
+.session-timetable .common-program-item--keynote {
+  padding-block: 30px;
+  color: #fff;
+  background: #15384c;
+  border-color: #22495d;
+}
+
+.session-timetable .common-program-item--keynote .common-program-time,
+.session-timetable .common-program-item--keynote h3 { color: #fff; }
+.session-timetable .common-program-item--keynote h3 { font-size: 26px; }
+.session-timetable .common-program-item--keynote .common-program-speaker { color: #e3f3fa; }
+.session-timetable .common-program-label {
+  margin: 0 0 8px;
+  color: #9ce2ef;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.session-timetable .common-program-item--transition {
+  padding-block: 16px;
+  background: #edf3f6;
+}
+
+.session-timetable .common-program-item--transition h3 {
+  color: #425566;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .session-timetable .timetable-timeline,
 .session-timetable .timetable-columns {
   display: grid;
@@ -323,6 +417,16 @@
 }
 
 @media (max-width: 479px) {
+  .session-timetable .common-program-section { padding-top: 40px; }
+  .session-timetable .timetable-section-title { font-size: 23px; }
+  .session-timetable .common-program-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px;
+  }
+  .session-timetable .common-program-time { justify-content: flex-start; font-size: 15px; }
+  .session-timetable .common-program-item--keynote { padding-block: 26px; }
+  .session-timetable .common-program-item--keynote h3 { font-size: 24px; }
   .session-2026.session-timetable .timetable-hero h1 {
     font-size: 36px;
   }
