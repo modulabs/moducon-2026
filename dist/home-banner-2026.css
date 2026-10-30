@@ -3,6 +3,54 @@ body[data-route="/"] .home-hero-2026 {
   background-color: #102136;
 }
 
+/* Keep the logo and event copy in flow when browser zoom reduces the viewport. */
+body[data-route="/"] .framer-rclk7 .home-hero-2026 {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 126px 24px 124px;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+body[data-route="/"] .home-hero-2026 > .framer-crv3l9,
+body[data-route="/"] .home-hero-2026 > .framer-um55we {
+  position: relative;
+  inset: auto;
+  max-width: 100%;
+  transform: none !important;
+}
+
+body[data-route="/"] .home-hero-2026 .framer-1ytc89i,
+body[data-route="/"] .home-hero-2026 .framer-yjf9c,
+body[data-route="/"] .home-hero-2026 .framer-vyd9lw {
+  min-width: 0;
+  max-width: 100%;
+}
+
+body[data-route="/"] .home-hero-2026 .framer-yjf9c .framer-text,
+body[data-route="/"] .home-hero-2026 .framer-vyd9lw .framer-text {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  body[data-route="/"] .framer-rclk7 .home-hero-2026 {
+    padding-top: 134px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  body[data-route="/"] .framer-rclk7 .home-hero-2026 {
+    min-height: 91vh;
+    min-height: 91svh;
+    padding-top: 165px;
+    gap: 32px;
+  }
+}
+
 body[data-route="/"] .home-hero-2026 .framer-yjf9c .framer-text,
 body[data-route="/"] .home-hero-2026 .framer-vyd9lw .framer-text {
   --framer-text-color: #fff !important;
