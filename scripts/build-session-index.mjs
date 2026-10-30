@@ -122,6 +122,8 @@ const intermissions = [
   { start: "12:45", end: "13:45", kind: "lunch", label: "점심시간" },
   { start: "14:25", end: "14:40", kind: "break", label: "쉬는 시간" },
   { start: "15:20", end: "15:35", kind: "break", label: "쉬는 시간" },
+  { start: "16:15", end: "16:30", kind: "break", label: "쉬는 시간" },
+  { start: "17:10", end: "17:25", kind: "break", label: "쉬는 시간" },
 ];
 for (const pause of intermissions) {
   required(!sessions.some((session) => session.start < pause.end && pause.start < session.end),

@@ -86,7 +86,7 @@
           <span>Track D <small>B146</small></span>
           <span>Track E <small>컨퍼런스홀 A</small></span>
         </div>
-        <div class="timetable-timeline" role="list" aria-label="MODUCON 2026 시간별 세션, 한국 시간" style="grid-template-rows:minmax(calc(var(--timetable-minute-height) * 40), 40fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 40), 40fr) minmax(84px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) 32px minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr)">
+        <div class="timetable-timeline" role="list" aria-label="MODUCON 2026 시간별 세션, 한국 시간" style="grid-template-rows:minmax(calc(var(--timetable-minute-height) * 40), 40fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 40), 40fr) minmax(84px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(64px, auto) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(calc(var(--timetable-minute-height) * 20), 20fr) minmax(64px, auto)">
           <div class="timetable-time" data-start="11:10" data-end="11:50" style="grid-column:1;grid-row:1" aria-hidden="true"><span>11:10</span><span>–</span><span>11:50</span></div>
           <div class="timetable-time timetable-time--intermission" data-start="11:50" data-end="12:05" style="grid-column:1;grid-row:2" aria-hidden="true"><span>11:50</span><span>–</span><span>12:05</span></div>
           <div class="timetable-time" data-start="12:05" data-end="12:45" style="grid-column:1;grid-row:3" aria-hidden="true"><span>12:05</span><span>–</span><span>12:45</span></div>
@@ -99,9 +99,10 @@
           <div class="timetable-time timetable-time--intermission" data-start="15:20" data-end="15:35" style="grid-column:1;grid-row:10" aria-hidden="true"><span>15:20</span><span>–</span><span>15:35</span></div>
           <div class="timetable-time" data-start="15:35" data-end="15:55" style="grid-column:1;grid-row:11" aria-hidden="true"><span>15:35</span><span>–</span><span>15:55</span></div>
           <div class="timetable-time" data-start="15:55" data-end="16:15" style="grid-column:1;grid-row:12" aria-hidden="true"><span>15:55</span><span>–</span><span>16:15</span></div>
-          <div class="timetable-gap" style="grid-column:1 / -1;grid-row:13" aria-hidden="true"><span>⋮</span></div>
+          <div class="timetable-time timetable-time--intermission" data-start="16:15" data-end="16:30" style="grid-column:1;grid-row:13" aria-hidden="true"><span>16:15</span><span>–</span><span>16:30</span></div>
           <div class="timetable-time" data-start="16:30" data-end="16:50" style="grid-column:1;grid-row:14" aria-hidden="true"><span>16:30</span><span>–</span><span>16:50</span></div>
           <div class="timetable-time" data-start="16:50" data-end="17:10" style="grid-column:1;grid-row:15" aria-hidden="true"><span>16:50</span><span>–</span><span>17:10</span></div>
+          <div class="timetable-time timetable-time--intermission" data-start="17:10" data-end="17:25" style="grid-column:1;grid-row:16" aria-hidden="true"><span>17:10</span><span>–</span><span>17:25</span></div>
           <div class="timetable-cell" role="listitem" data-track="B" data-start="11:10" data-end="11:50" style="grid-column:3;grid-row:1 / 2">
             <a class="timetable-card" href="../session/2026/kim-sun-woo/index.html" data-local-route="/session/2026/kim-sun-woo" data-session-slug="kim-sun-woo" aria-labelledby="kim-sun-woo-title kim-sun-woo-speakers" aria-describedby="kim-sun-woo-time kim-sun-woo-track">
               <p class="timetable-card-time" id="kim-sun-woo-time"><time datetime="2026-12-12T11:10:00+09:00">11:10</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="2026-12-12T11:50:00+09:00">11:50</time><span class="timetable-sr-only">까지, 한국 시간</span></p>
@@ -330,6 +331,10 @@
               <span class="timetable-card-plus" aria-hidden="true">+</span>
             </a>
           </div>
+          <div class="timetable-intermission" role="listitem" data-kind="break" data-start="16:15" data-end="16:30" style="grid-column:2 / -1;grid-row:13 / 14">
+            <strong>쉬는 시간</strong>
+            <span class="timetable-intermission-time"><time datetime="2026-12-12T16:15:00+09:00">16:15</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="2026-12-12T16:30:00+09:00">16:30</time><span class="timetable-sr-only">까지, 한국 시간</span></span>
+          </div>
           <div class="timetable-cell" role="listitem" data-track="C" data-start="16:30" data-end="16:50" style="grid-column:4;grid-row:14 / 15">
             <a class="timetable-card" href="../session/2026/lee-yong-hwan/index.html" data-local-route="/session/2026/lee-yong-hwan" data-session-slug="lee-yong-hwan" aria-labelledby="lee-yong-hwan-title lee-yong-hwan-speakers" aria-describedby="lee-yong-hwan-time lee-yong-hwan-track">
               <p class="timetable-card-time" id="lee-yong-hwan-time"><time datetime="2026-12-12T16:30:00+09:00">16:30</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="2026-12-12T16:50:00+09:00">16:50</time><span class="timetable-sr-only">까지, 한국 시간</span></p>
@@ -384,6 +389,10 @@
               </div>
               <span class="timetable-card-plus" aria-hidden="true">+</span>
             </a>
+          </div>
+          <div class="timetable-intermission" role="listitem" data-kind="break" data-start="17:10" data-end="17:25" style="grid-column:2 / -1;grid-row:16 / 17">
+            <strong>쉬는 시간</strong>
+            <span class="timetable-intermission-time"><time datetime="2026-12-12T17:10:00+09:00">17:10</time><span aria-hidden="true">–</span><span class="timetable-sr-only">부터 </span><time datetime="2026-12-12T17:25:00+09:00">17:25</time><span class="timetable-sr-only">까지, 한국 시간</span></span>
           </div>
         </div>
       </div>
