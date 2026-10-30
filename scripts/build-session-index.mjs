@@ -6,6 +6,10 @@ import { fileURLToPath } from "node:url";
 // Do not discover pages by glob or read the preview agent / Google Sheet here.
 // Add a slug only after the user approves publication of its detail page.
 const approvedSlugs = [
+  "choi-jae-sik",
+  "kim-sun-woo",
+  "yoo-yong-ha",
+  "kim-jae-woo",
   "dao-lab-together",
   "kim-do-hyeon",
   "kim-ji-eung",
@@ -30,11 +34,15 @@ const approvedSlugs = [
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
-const tracks = ["B", "C", "D", "E"];
-const rooms = { B: "컨퍼런스홀 B", C: "B147", D: "B146", E: "컨퍼런스홀 A" };
+const tracks = ["A", "B", "C", "D", "E"];
+const rooms = { A: "이삼봉홀", B: "컨퍼런스홀 B", C: "B147", D: "B146", E: "컨퍼런스홀 A" };
 // Reviewed square framing, in original image pixels. Only the listing uses it.
 // Keep the head visible at a similar size; never alter the original/detail photo.
 const portraitFrames = {
+  "최재식": { imageWidth: 1200, x: 235, y: 70, size: 700 },
+  "김선우": { imageWidth: 400, x: 70, y: 10, size: 270 },
+  "유용하": { imageWidth: 578, x: 75, y: 25, size: 465 },
+  "김재우": { imageWidth: 4032, x: 1770, y: 180, size: 2100 },
   "김도현": { imageWidth: 418, x: 15, y: 10, size: 360 },
   "김지응": { imageWidth: 590, x: 0, y: 0, size: 590 },
   "송무복": { imageWidth: 1920, x: 650, y: 50, size: 700 },
@@ -67,7 +75,7 @@ const sessions = approvedSlugs.map((slug) => {
   const html = readFileSync(detailPath, "utf8");
   const title = capture(html, /<h1[^>]*>([\s\S]*?)<\/h1>/, `${slug}: title`);
   const track = capture(html, /class="session-track">Track ([A-Z])<\/span>/, `${slug}: track`);
-  const room = capture(html, /<dt>장소<\/dt>\s*<dd>이화여대 ECC · (B\d+|컨퍼런스홀 [AB])<\/dd>/, `${slug}: room`);
+  const room = capture(html, /<dt>장소<\/dt>\s*<dd>이화여대 ECC · (B\d+|컨퍼런스홀 [AB]|이삼봉홀)<\/dd>/, `${slug}: room`);
   const times = [...html.matchAll(/<time datetime="(2026-12-12T(\d{2}:\d{2}):00\+09:00)">([^<]+)<\/time>/g)];
   required(times.length === 2, `${slug}: expected exactly one start/end time pair`);
   required(tracks.includes(track) && rooms[track] === room, `${slug}: review the approved track columns`);
