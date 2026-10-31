@@ -368,7 +368,7 @@
   {
     "path": "/session/2026/song-kyung-min",
     "file": "session/2026/song-kyung-min/index.html",
-    "title": "I가 대체할 수 없는 일과 사람을 연결하는 채용 플랫폼 '면모(MYEONMO)' | MODUCON 2026"
+    "title": "AI를 배우고, 일상과 비즈니스에 적용하다 | MODUCON 2026"
   },
   {
     "path": "/session/2026/jung-hoon-gu",
@@ -429,5 +429,15 @@
     "path": "/session/2026/kim-jae-woo",
     "file": "session/2026/kim-jae-woo/index.html",
     "title": "AI 반도체를 위한 프로그래밍 언어 만들기 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/yoo-su-yeon",
+    "file": "session/2026/yoo-su-yeon/index.html",
+    "title": "무제한 AI 영상 생성은 어떻게 비즈니스가 되는가 | MODUCON 2026"
+  },
+  {
+    "path": "/session/2026/song-kyung-min-kim-dong-young-hwang-eun-hye",
+    "file": "session/2026/song-kyung-min-kim-dong-young-hwang-eun-hye/index.html",
+    "title": "AI를 배우고, 일상과 비즈니스에 적용하다 | MODUCON 2026"
   }
 ]

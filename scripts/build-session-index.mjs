@@ -24,7 +24,8 @@ const approvedSlugs = [
   "kim-tae-su",
   "jo-in-ryeong",
   "park-jong-se",
-  "song-kyung-min",
+  "song-kyung-min-kim-dong-young-hwang-eun-hye",
+  "yoo-su-yeon",
   "jung-hoon-gu",
   "sasha-seo",
   "kim-yu-jin",
@@ -55,6 +56,9 @@ const commonProgram = [
 // Reviewed square framing, in original image pixels. Only the listing uses it.
 // Keep the head visible at a similar size; never alter the original/detail photo.
 const portraitFrames = {
+  "유수연": { imageWidth: 600, x: 130, y: 45, size: 360 },
+  "김동영": { imageWidth: 6530, x: 3900, y: 1000, size: 1700 },
+  "황은혜": { imageWidth: 354, x: 0, y: 0, size: 354 },
   "최재식": { imageWidth: 1200, x: 235, y: 70, size: 700 },
   "김선우": { imageWidth: 400, x: 70, y: 10, size: 270 },
   "유용하": { imageWidth: 578, x: 75, y: 25, size: 465 },
