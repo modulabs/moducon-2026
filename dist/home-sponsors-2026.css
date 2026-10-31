@@ -53,8 +53,52 @@ body[data-route="/"] .home-rd-partners h3 {
   text-align: center;
 }
 
+/* Two centered company logos, followed by three institutions on one row. */
 body[data-route="/"] .home-sponsor-grid {
-  width: min(640px, 100%);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 24px;
+  width: min(828px, 100%);
+}
+
+body[data-route="/"] .home-sponsor-grid > .home-sponsor-logo {
+  grid-column: span 2;
+  width: 100%;
+}
+
+body[data-route="/"] .home-sponsor-grid > [data-sponsor="kakao"] {
+  grid-column: 2 / span 2;
+}
+
+body[data-route="/"] .home-sponsor-grid > [data-sponsor="cochl"] {
+  grid-column: 4 / span 2;
+}
+
+body[data-route="/"] .home-sponsor-grid > [data-sponsor="moel"] {
+  grid-column: 1 / span 2;
+}
+
+/* Match visible artwork heights while keeping both original image ratios. */
+body[data-route="/"] .home-cooperator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: min(544px, 100%);
+}
+
+body[data-route="/"] .home-cooperator-grid > .home-cooperator-logo {
+  width: 100%;
+  height: 88px;
+}
+
+body[data-route="/"] [data-cooperator="recruitfirst"] .home-logo-artwork {
+  width: 88%;
+  max-width: 228px;
+}
+
+body[data-route="/"] [data-cooperator="tave"] .home-logo-artwork {
+  width: 68%;
+  max-width: 176px;
 }
 
 body[data-route="/"] .home-logo-artwork {
@@ -114,5 +158,31 @@ body[data-route="/"] .home-organizer-logo .framer-7hdiyz {
   body[data-route="/"] .home-organizer-grid,
   body[data-route="/"] .home-cooperator-grid {
     gap: 10px;
+  }
+}
+
+@media (max-width: 809px) {
+  body[data-route="/"] .home-sponsor-grid > [data-sponsor="kakao"] {
+    grid-column: 1 / span 3;
+  }
+
+  body[data-route="/"] .home-sponsor-grid > [data-sponsor="cochl"] {
+    grid-column: 4 / span 3;
+  }
+
+  body[data-route="/"] .home-sponsor-grid > .home-sponsor-logo {
+    height: clamp(64px, 12vw, 88px);
+  }
+
+  body[data-route="/"] .home-sponsor-grid .home-logo-artwork {
+    max-width: calc(100% - 12px);
+  }
+
+  body[data-route="/"] .home-cooperator-grid {
+    gap: 16px;
+  }
+
+  body[data-route="/"] .home-cooperator-grid > .home-cooperator-logo {
+    height: 72px;
   }
 }
