@@ -79,6 +79,10 @@ body[data-route="/"] .home-logo-artwork img {
   object-fit: contain;
 }
 
+body[data-route="/"] [data-cooperator="tave"] {
+  background: #141414;
+}
+
 body[data-route="/"] [data-sponsor="kakao"] {
   background: #ffcd00;
 }
